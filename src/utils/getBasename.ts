@@ -17,19 +17,14 @@ export function getDynamicBasename() {
 
   // If a route is found at index > 0, the leading segments are the basename
   if (routeIndex > 0) {
-    const detected = '/' + pathSegments.slice(0, routeIndex).join('/');
-    console.log(`[Router] Detected basename: ${detected}`);
-    return detected;
+    return '/' + pathSegments.slice(0, routeIndex).join('/');
   }
   
   // Special case for your specific folder if it looks like a course subdirectory
   // Matches segments like /cs6120, /cs6120f26, etc.
   if (pathSegments.length > 0 && pathSegments[0].toLowerCase().startsWith('cs6')) {
-    const detected = `/${pathSegments[0]}`;
-    console.log(`[Router] Detected course basename: ${detected}`);
-    return detected;
+    return `/${pathSegments[0]}`;
   }
   
-  console.log(`[Router] Using root basename ("")`);
   return '';
 }
