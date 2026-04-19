@@ -34,7 +34,7 @@ export default function HomePage() {
       <section id="syllabus" className="py-24 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20">
         <div>
           <Badge variant="outline" className="text-brand-red border-brand-red mb-4 px-4 py-1 rounded-none uppercase tracking-widest font-bold">
-            01 / Syllabus Summary
+            Syllabus Summary
           </Badge>
           <MarkdownSection contentPath="/content/syllabus.md" className="mt-8" />
         </div>
