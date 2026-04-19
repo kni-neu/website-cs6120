@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import SchedulePage from "./pages/SchedulePage";
 import AssignmentPage from "./pages/AssignmentPage";
@@ -6,8 +6,11 @@ import AssignmentsPage from "./pages/AssignmentsPage";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 export default function App() {
+  // Automatically detect the subfolder if hosted at .../folder/
+  const basename = window.location.pathname.startsWith('/cs6120s26') ? '/cs6120s26' : '/';
+
   return (
-    <Router>
+    <Router basename={basename}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
