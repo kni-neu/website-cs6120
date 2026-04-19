@@ -35,6 +35,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
+          force_orphan: true # This completely overwrites the branch with the new build
 # The following steps are for the native GitHub Actions deployment method, 
 # but now the 'gh-pages' branch will ALSO contain the compiled code.
       - name: Setup Pages
