@@ -38,11 +38,11 @@ export function Hero() {
                 VIEW SCHEDULE
               </Button>
             </Link>
-            <a href="#syllabus">
+            <Link to="/#syllabus">
               <Button variant="outline" className="border-2 border-black rounded-none h-12 px-8 font-bold tracking-wide hover:bg-black hover:text-white transition-all">
                 SYLLABUS
               </Button>
-            </a>
+            </Link>
           </div>
           
           <div className="grid grid-cols-2 gap-8 border-t border-gray-200 pt-8">

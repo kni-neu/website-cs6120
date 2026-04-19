@@ -79,6 +79,13 @@ export const courseData = {
   schedule: scheduleData,
   projects: [
     {
+      title: "Project Proposal",
+      description: "Submit a 2-page proposal outlining your chosen NLP application, dataset, and proposed architecture.",
+      link: "/assignments/project-proposal",
+      deadline: "Week 4",
+      status: "Completed"
+    },
+    {
       title: "Final Project: Creative NLP Application",
       description: "Build and serve a functional NLP application using modern techniques (LLMs, RAG, Agents).",
       link: "/assignments/final-project",
