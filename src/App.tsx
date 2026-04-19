@@ -4,17 +4,13 @@ import SchedulePage from "./pages/SchedulePage";
 import AssignmentPage from "./pages/AssignmentPage";
 import AssignmentsPage from "./pages/AssignmentsPage";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { getDynamicBasename } from "./utils/getBasename";
 
 export default function App() {
-  // Automatically detect the subfolder (e.g., /cs6120f26/) from the URL path
-  const pathSegments = window.location.pathname.split('/').filter(Boolean);
-  const firstSegment = pathSegments[0] || '';
-  
-  // If the first segment looks like a course folder (e.g., starts with 'cs'), use it as the basename
-  const basename = firstSegment.startsWith('cs') ? `/${firstSegment}` : '/';
+  const basename = getDynamicBasename();
 
   return (
-    <Router basename={basename}>
+    <Router basename={basename || "/"}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />

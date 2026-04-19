@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { getDynamicBasename } from "../utils/getBasename";
 
 interface MarkdownSectionProps {
   contentPath: string;
@@ -13,7 +14,7 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
 
   useEffect(() => {
     // Ensure the path works correctly when hosted in a subdirectory
-    const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
+    const baseUrl = getDynamicBasename();
     const fullPath = contentPath.startsWith("/") 
       ? `${baseUrl}${contentPath}` 
       : `${baseUrl}/${contentPath}`;
