@@ -6,8 +6,12 @@ import AssignmentsPage from "./pages/AssignmentsPage";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 export default function App() {
-  // Automatically detect the subfolder if hosted at .../folder/
-  const basename = window.location.pathname.startsWith('/cs6120s26') ? '/cs6120s26' : '/';
+  // Automatically detect the subfolder (e.g., /cs6120f26/) from the URL path
+  const pathSegments = window.location.pathname.split('/').filter(Boolean);
+  const firstSegment = pathSegments[0] || '';
+  
+  // If the first segment looks like a course folder (e.g., starts with 'cs'), use it as the basename
+  const basename = firstSegment.startsWith('cs') ? `/${firstSegment}` : '/';
 
   return (
     <Router basename={basename}>
