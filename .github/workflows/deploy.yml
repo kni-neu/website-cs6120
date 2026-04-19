@@ -29,6 +29,14 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+# The following steps are for the native GitHub Actions deployment method, 
+# but now the 'gh-pages' branch will ALSO contain the compiled code.
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
