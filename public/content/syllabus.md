@@ -10,7 +10,7 @@ By the end of this class, students will have first-hand knowledge and be able to
 ## Course Meeting Times
 - **Lecture:** Mondays, 4:00 PM – 7:20 PM
 - **Location:** San Jose, Room 902/903
-- **Dates:** Spring 2026
+- **Dates:** Fall 2026
 
 ## Key Topics
 - **Deep Learning in NLP**

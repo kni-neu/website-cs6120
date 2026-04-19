@@ -54,7 +54,17 @@ export default function SchedulePage() {
                     </Badge>
                     {week.date && (
                       <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">
-                        {week.date} {week.videoLink && <a href={week.videoLink} className="text-brand-red ml-1 hover:underline">(video)</a>}
+                        {week.date} 
+                        {week.videoLink && (
+                          <a href={week.videoLink} target="_blank" rel="noreferrer" className="text-brand-red ml-2 hover:underline transition-all">
+                            (video)
+                          </a>
+                        )}
+                        {week.slidesLink && (
+                          <a href={week.slidesLink} target="_blank" rel="noreferrer" className="text-brand-red ml-2 hover:underline transition-all">
+                            (slides)
+                          </a>
+                        )}
                       </span>
                     )}
                   </div>
