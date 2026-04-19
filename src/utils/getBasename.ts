@@ -20,16 +20,21 @@ export function getDynamicBasename() {
   // If we found an app route (like /assignments) at index 1, 
   // index 0 is the basename (e.g., /cs6120f26/)
   if (routeIndex > 0) {
-    return '/' + pathSegments.slice(0, routeIndex).join('/');
+    const detected = '/' + pathSegments.slice(0, routeIndex).join('/');
+    console.log(`[Router] Detected basename from route: ${detected}`);
+    return detected;
   }
   
   // If we have segments but none are app routes, the first segment might be the basename
   if (pathSegments.length > 0 && routeIndex === -1) {
     // Only return if it doesn't look like a direct file access
     if (!pathSegments[0].includes('.')) {
-      return `/${pathSegments[0]}`;
+      const detected = `/${pathSegments[0]}`;
+      console.log(`[Router] Detected basename from path: ${detected}`);
+      return detected;
     }
   }
   
+  console.log(`[Router] Using root basename ("")`);
   return '';
 }
