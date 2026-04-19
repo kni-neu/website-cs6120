@@ -1,4 +1,5 @@
 import { Calendar, BookOpen, Users, MessageSquare, ExternalLink, Mail, MapPin, Clock } from "lucide-react";
+import { scheduleData } from "./schedule";
 
 export const courseData = {
   title: "Natural Language Processing",
@@ -75,109 +76,7 @@ export const courseData = {
       content: "Natural Language Processing. Looking forward to the semester!"
     }
   ],
-  schedule: [
-    { 
-      week: 1, 
-      topic: "Introduction & Logistics", 
-      reading: "Jurafsky & Martin Ch. 1",
-      lab: "Environment Setup & Text Preprocessing",
-      labLink: "/assignments/lab1",
-      homework: "HW 0: Prerequisites Check",
-      homeworkLink: "/assignments/hw0",
-      readingGroup: "The History of NLP"
-    },
-    { 
-      week: 2, 
-      topic: "Regular Expressions & N-grams", 
-      reading: "Jurafsky & Martin Ch. 2-3",
-      lab: "Tokenization and Regex Practice",
-      labLink: "/assignments/lab2",
-      homework: "HW 1: N-gram Language Models",
-      homeworkLink: "/assignments/hw1",
-      readingGroup: "Shannon (1948) - Financial NLP"
-    },
-    { 
-      week: 3, 
-      topic: "Vector Semantics & TF-IDF", 
-      reading: "Jurafsky & Martin Ch. 6",
-      lab: "Word Vectors & TF-IDF Implementation",
-      homework: "HW 1 (Cont'd): Pointwise Mutual Information",
-      homeworkLink: "/assignments/hw2",
-      readingGroup: "Distributional Hypothesis"
-    },
-    { 
-      week: 4, 
-      topic: "Neural Networks for NLP", 
-      reading: "RNNs and Word Embeddings",
-      lab: "PyTorch Basics for Text",
-      homework: "HW 2: Neural Sentiment Analysis",
-      readingGroup: "Word2Vec (Mikolov et al.)"
-    },
-    { 
-      week: 5, 
-      topic: "Sequence-to-Sequence Models", 
-      reading: "Attention Mechanisms",
-      lab: "Encoder-Decoder Architectures",
-      homework: "HW 2 (Cont'd): Machine Translation",
-      readingGroup: "Bahdanau Attention"
-    },
-    { 
-      week: 6, 
-      topic: "Transformers", 
-      reading: "Attention is All You Need",
-      lab: "Building a Transformer from Scratch",
-      homework: "HW 3: Multi-head Attention Lab",
-      readingGroup: "Vaswani et al. (2017)"
-    },
-    { 
-      week: 7, 
-      topic: "BERT & Transfer Learning", 
-      reading: "Devlin et al.",
-      lab: "Fine-tuning BERT on GLUE",
-      homework: "HW 3 (Cont'd): Task Adaptation",
-      readingGroup: "The Rise of Pre-training"
-    },
-    { 
-      week: 8, 
-      topic: "Large Language Models (LLMs)", 
-      reading: "Scaling Laws & GPT",
-      lab: "Prompt Engineering & Few-shot Learning",
-      homework: "HW 4: LLM Application Prototype",
-      readingGroup: "GPT-3 (Brown et al.)"
-    },
-    { 
-      week: 9, 
-      topic: "Instruction Tuning & RLHF", 
-      reading: "InstructGPT",
-      lab: "Fine-tuning with LoRA/QLoRA",
-      homework: "HW 4 (Cont'd): Preference Optimization",
-      readingGroup: "RLHF Policy Gradient"
-    },
-    { 
-      week: 10, 
-      topic: "Retrieval Augmented Generation", 
-      reading: "RAG & Vector DBs",
-      lab: "Vector Database Setup (Pinecone/Milvus)",
-      homework: "Final Project Proposal",
-      readingGroup: "Lewis et al. (2020) - RAG"
-    },
-    { 
-      week: 11, 
-      topic: "Evaluation & Ethics in NLP", 
-      reading: "Bender et al.",
-      lab: "Bias Detection in Word Embeddings",
-      homework: "Final Project Implementation",
-      readingGroup: "Stochastic Parrots"
-    },
-    { 
-      week: 12, 
-      topic: "Final Projects & Future Directions", 
-      reading: "Latest ArXiv papers",
-      lab: "Project Poster Session",
-      homework: "Final Report Due",
-      readingGroup: "The Future of Agents"
-    }
-  ],
+  schedule: scheduleData,
   projects: [
     {
       title: "Final Project: Creative NLP Application",
