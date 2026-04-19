@@ -9,30 +9,25 @@ export function getDynamicBasename() {
   const path = window.location.pathname;
   const pathSegments = path.split('/').filter(Boolean);
   
-  // Known top-level routes in our app
+  // Clean segments and find the first known route
   const appRoutes = ['schedule', 'assignments', 'personnel', 'syllabus'];
-  
-  // Find the index of the first segment that is an app route
   const routeIndex = pathSegments.findIndex(segment => 
     appRoutes.includes(segment.toLowerCase())
   );
 
-  // If we found an app route (like /assignments) at index 1, 
-  // index 0 is the basename (e.g., /cs6120f26/)
+  // If a route is found at index > 0, the leading segments are the basename
   if (routeIndex > 0) {
     const detected = '/' + pathSegments.slice(0, routeIndex).join('/');
-    console.log(`[Router] Detected basename from route: ${detected}`);
+    console.log(`[Router] Detected basename: ${detected}`);
     return detected;
   }
   
-  // If we have segments but none are app routes, the first segment might be the basename
-  if (pathSegments.length > 0 && routeIndex === -1) {
-    // Only return if it doesn't look like a direct file access
-    if (!pathSegments[0].includes('.')) {
-      const detected = `/${pathSegments[0]}`;
-      console.log(`[Router] Detected basename from path: ${detected}`);
-      return detected;
-    }
+  // Special case for your specific folder if it looks like a course subdirectory
+  // Matches segments like /cs6120, /cs6120f26, etc.
+  if (pathSegments.length > 0 && pathSegments[0].toLowerCase().startsWith('cs6')) {
+    const detected = `/${pathSegments[0]}`;
+    console.log(`[Router] Detected course basename: ${detected}`);
+    return detected;
   }
   
   console.log(`[Router] Using root basename ("")`);

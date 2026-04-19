@@ -10,7 +10,7 @@ export default function App() {
   const basename = getDynamicBasename();
 
   return (
-    <Router basename={basename}>
+    <Router basename={basename === "/" ? "" : basename}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
