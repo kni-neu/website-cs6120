@@ -6,15 +6,29 @@
  * If hosted at the root, it returns an empty string.
  */
 export function getDynamicBasename() {
-  const pathSegments = window.location.pathname.split('/').filter(Boolean);
+  const path = window.location.pathname;
+  const pathSegments = path.split('/').filter(Boolean);
   
   // Known top-level routes in our app
   const appRoutes = ['schedule', 'assignments', 'personnel', 'syllabus'];
   
-  // If we have segments and the first one is NOT a known route, 
-  // it's likely the subfolder/basename (e.g., /cs6120f26/)
-  if (pathSegments.length > 0 && !appRoutes.includes(pathSegments[0].toLowerCase())) {
-    return `/${pathSegments[0]}`;
+  // Find the index of the first segment that is an app route
+  const routeIndex = pathSegments.findIndex(segment => 
+    appRoutes.includes(segment.toLowerCase())
+  );
+
+  // If we found an app route (like /assignments) at index 1, 
+  // index 0 is the basename (e.g., /cs6120f26/)
+  if (routeIndex > 0) {
+    return '/' + pathSegments.slice(0, routeIndex).join('/');
+  }
+  
+  // If we have segments but none are app routes, the first segment might be the basename
+  if (pathSegments.length > 0 && routeIndex === -1) {
+    // Only return if it doesn't look like a direct file access
+    if (!pathSegments[0].includes('.')) {
+      return `/${pathSegments[0]}`;
+    }
   }
   
   return '';

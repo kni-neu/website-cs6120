@@ -30,7 +30,7 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
       })
       .catch((err) => {
         console.error("Error loading markdown:", err);
-        setContent(`### Error\nFailed to load content from \`${fullPath}\`. Please ensure the file exists in the \`/public\` folder.`);
+        setContent(`### Error\nFailed to load content from \`${fullPath}\`.\n\n**Debug Info:**\n- **Base detected:** \`${baseUrl || "(root)"}\`\n- **Full Path:** \`${fullPath}\`\n- **Current URL:** \`${window.location.href}\`\n\nPlease ensure the content file exists in your \`/public\` folder.`);
         setLoading(false);
       });
   }, [contentPath]);
