@@ -16,7 +16,7 @@ export const scheduleData = [
     reading: "Jurafsky & Martin Ch. 1",
     lab: "Laboratory - Getting Started on Google Cloud with Your Credits",
     labLink: "../assets/pdf/lab-1.pdf",
-    homework: "Assignment 1 is assigned - A First Look at Processing Language",
+    homework: "Assignment 1: A First Look at Processing Language",
     homeworkLink: "/assignments/hw1",
   },
   { 
@@ -35,7 +35,7 @@ export const scheduleData = [
     readingLink: "https://web.stanford.edu/class/cs224n/readings/gradient-notes.pdf",
     lab: "Laboratory - Containerization in the Cloud",
     labLink: "../assets/pdf/lab-2.pdf",
-    homework: "Assignment 1 is due; Assignment 2 is assigned (Text Classification)",
+    homework: "Assignment 2: Text Classification",
     homeworkLink: "/assignments/hw2",
   },
   { 
@@ -57,7 +57,7 @@ export const scheduleData = [
     reading: "Jurafsky & Martin Ch. 6",
     lab: "Laboratory - Naïve Bayes",
     labLink: "https://colab.research.google.com/drive/14wNBIyAOMTyh5Hnuv8tOBXdyV39H0QYW#",
-    homework: "Text Classification Homework",
+    homework: "Assignment 2: Text Classification",
     homeworkLink: "/assignments/hw2"
   },
   { 
@@ -78,7 +78,7 @@ export const scheduleData = [
     readingGroupLink: "https://arxiv.org/abs/2503.23278",
     lab: "Laboratory - Autocorrect Vocabulary Candidates",
     labLink: "https://colab.research.google.com/drive/1M8i7DuIuUMKDHO3Kuu98ZE3xv60zupAV",
-    homework: "Assignment 2 is due; Assignment 3 is assigned (Autocorrect)",
+    homework: "Assignment 3: Autocorrect",
     homeworkLink: "/assignments/hw3",
   },
   { 
@@ -104,7 +104,7 @@ export const scheduleData = [
     readingGroupLink: "https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf",
     lab: "Laboratory - N-Grams and Building Language Models",
     labLink: "https://colab.research.google.com/drive/1Ul6HAglGBoc53yAIfui-pgeTso7wMB26",
-    homework: "Assignment 3 is due; Assignment 4 assigned (Autocomplete)",
+    homework: "Assignment 4: Autocomplete",
     homeworkLink: "/assignments/hw4",
   },
   { 
@@ -124,7 +124,7 @@ export const scheduleData = [
     readingGroupLink: "https://arxiv.org/abs/2310.12321",
     lab: "Laboratory - Word Embeddings with CBOW",
     labLink: "https://colab.research.google.com/drive/1lknBFuNeVr7-AvQx4vKvCQfVkL_za65Z",
-    homework: "Assignment 4 is due; Assignment 5 assigned (Word Embeddings)",
+    homework: "Assignment 5: Word Embeddings",
     homeworkLink: "/assignments/hw5",
   },
   { 
@@ -145,7 +145,7 @@ export const scheduleData = [
     readingGroupLink: "https://arxiv.org/abs/2512.02556",
     lab: "Laboratory - Serving an LLM (GCP/NEU)",
     labLink: "../assets/pdf/lab-11.1.pdf",
-    homework: "Assignment 5 is due; Assignment 6 assigned (RNN Implementation)",
+    homework: "Assignment 6: RNN Implementation",
     homeworkLink: "/assignments/hw6",
   },
   { 
@@ -165,7 +165,7 @@ export const scheduleData = [
     readingGroupLink: "https://arxiv.org/abs/1211.5063",
     lab: "Laboratory - Dot Product Attention & Masking",
     labLink: "https://colab.research.google.com/drive/10SDgUL4px6M_R7-4c1EDHEx0neck2ZOq",
-    homework: "Assignment 6 is due; Assignment 7 assigned (Transformers)",
+    homework: "Assignment 7: Transformers",
     homeworkLink: "/assignments/hw7",
   },
   { 
@@ -187,8 +187,8 @@ export const scheduleData = [
     readingLink: "https://arxiv.org/abs/1810.04805",
     lab: "Laboratory - Tuning LLMs",
     labLink: "https://colab.research.google.com/drive/1u8DDFEiCC2yJgQIfbCOY4_aN06MJeUfv",
-    homework: "Project Proposals are due; Assignment 7 is due",
-    homeworkLink: "/assignments/final-project",
+    homework: "Project Proposal",
+    homeworkLink: "/assignments/project-proposal",
   },
   { 
     week: 10, 
@@ -241,7 +241,7 @@ export const scheduleData = [
     readingGroupLink: "https://arxiv.org/abs/1706.03762",
     lab: "Laboratory - OpenClaw Installation",
     labLink: "../assets/pdf/lab-week14.pdf",
-    homework: "Final Report Due",
+    homework: "Final Report",
     homeworkLink: "/assignments/final-project",
   },
   { 

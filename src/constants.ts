@@ -82,8 +82,8 @@ export const courseData = {
       title: "Project Proposal",
       description: "Submit a 2-page proposal outlining your chosen NLP application, dataset, and proposed architecture.",
       link: "/assignments/project-proposal",
-      deadline: "Week 4",
-      status: "Completed"
+      deadline: "Week 9",
+      status: "Upcoming"
     },
     {
       title: "Final Project: Creative NLP Application",

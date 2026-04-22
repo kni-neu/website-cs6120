@@ -1,16 +1,16 @@
 # HW 0: Prerequisites Check
 
-## Overview
-This homework is designed to ensure you have the necessary mathematical and programming background for this course.
+You will need [the data](https://course.ccs.neu.edu/cs6120f26/data/shakespeare/), which we'll be using throughout the semester. The Bash command is
 
-## Topics Covered
-- Linear Algebra (Matrix multiplication, eigenvectors)
-- Calculus (Directives, partial derivatives)
-- Probability (Bayes Theorem, Expectation)
-- Python Programming
+```
+wget --no-check-certificate https://course.ccs.neu.edu/cs6120f26/data/shakespeare/shakespeare-edit.txt
+```
 
-## Instructions
-Please complete the quiz on Canvas by the end of the first week.
+You can use Jupyter and Google Colab magick commands (calling Bash from inside of a notebook) with the `!` indicator. For example, `!wget <options> <file>` will suffice. If you are more comfortable with notebooks, there are several options:
+
+* [Locally on Your Laptop](https://jupyter.org/install)
+* [Google Cloud Vertex Work](https://console.cloud.google.com/vertex-ai/workbench) with your Google Cloud credits. (Enable Notebooks API).
+* [Google Colabs](https://colab.research.google.com/) with your Google Account
 
 ---
 *CS 6120 / Spring 2026 / Northeastern University*

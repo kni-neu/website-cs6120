@@ -124,11 +124,11 @@ export default function AssignmentsPage() {
             </div>
           </div>
 
-          {/* Projects Section */}
+          {/* Project Section */}
           <div className="space-y-8">
             <div className="flex items-center gap-3 border-b-2 border-black pb-4">
               <Rocket className="w-8 h-8 text-brand-red" />
-              <h2 className="text-3xl font-black uppercase tracking-tighter">Projects</h2>
+              <h2 className="text-3xl font-black uppercase tracking-tighter">Project</h2>
             </div>
             <div className="space-y-4">
               {projects.map((project: any, idx: number) => (
@@ -155,11 +155,11 @@ export default function AssignmentsPage() {
                        </div>
                        {project.link.startsWith('http') ? (
                          <a href={project.link} target="_blank" rel="noreferrer" className="ml-auto text-xs font-black uppercase tracking-widest hover:text-brand-red transition-colors underline underline-offset-4 decoration-brand-red">
-                           PROJECT HUBS
+                           SUBMISSION DETAILS
                          </a>
                        ) : (
                          <Link to={project.link} className="ml-auto text-xs font-black uppercase tracking-widest hover:text-brand-red transition-colors underline underline-offset-4 decoration-brand-red">
-                           PROJECT HUBS
+                           SUBMISSION DETAILS
                          </Link>
                        )}
                     </div>

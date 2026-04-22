@@ -61,7 +61,7 @@ section {
 }
 
 .markdown-body ul {
-  @apply list-disc list-inside mb-4 space-y-2;
+  @apply list-disc list-outside mb-4 space-y-0 pl-5;
 }
 
 .markdown-body blockquote {
