@@ -7,7 +7,12 @@ import { Badge } from "@/components/ui/badge";
 import { FileText, FlaskConical, Rocket, ArrowRight, Calendar } from "lucide-react";
 
 export default function AssignmentsPage() {
-  const homeworks = courseData.schedule.filter(item => item.homework);
+  const homeworks = courseData.schedule.filter(item => 
+    item.homework && 
+    !item.homework.toLowerCase().includes('project') &&
+    !item.homework.toLowerCase().includes('final report') &&
+    !(item.homeworkLink && item.homeworkLink.includes('final-project'))
+  );
   const labs = courseData.schedule.filter(item => item.lab);
   const projects = (courseData as any).projects || [];
 
