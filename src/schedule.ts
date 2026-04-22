@@ -57,8 +57,6 @@ export const scheduleData = [
     reading: "Jurafsky & Martin Ch. 6",
     lab: "Laboratory - Naïve Bayes",
     labLink: "https://colab.research.google.com/drive/14wNBIyAOMTyh5Hnuv8tOBXdyV39H0QYW#",
-    homework: "Assignment 2: Text Classification",
-    homeworkLink: "/assignments/hw2"
   },
   { 
     week: 4, 

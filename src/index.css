@@ -84,6 +84,18 @@ section {
   @apply border-b border-gray-100 p-3 text-sm;
 }
 
+.markdown-body img {
+  @apply max-w-full h-auto my-8 mx-auto block;
+}
+
+.markdown-body code {
+  @apply font-mono text-sm px-1.5 py-0.5 rounded-sm bg-gray-100 text-brand-red;
+}
+
+.markdown-body.dark code {
+  @apply bg-white/10 text-brand-red;
+}
+
 .markdown-body.dark {
   @apply text-gray-300;
 }

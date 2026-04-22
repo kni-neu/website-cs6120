@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { getDynamicBasename } from "../utils/getBasename";
 
 interface MarkdownSectionProps {
@@ -60,7 +63,41 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
 
   return (
     <div className={`markdown-body ${className}`}>
-      <Markdown remarkPlugins={[remarkGfm]}>{content}</Markdown>
+      <Markdown 
+        remarkPlugins={[remarkGfm]} 
+        rehypePlugins={[rehypeRaw]}
+        components={{
+          code({ className, children, ...props }) {
+            const match = /language-(\w+)/.exec(className || "");
+            const isInline = !className;
+            return !isInline && match ? (
+              <div className="neo-brutalism my-6 overflow-hidden">
+                <SyntaxHighlighter
+                  style={oneLight}
+                  language={match[1]}
+                  PreTag="div"
+                  customStyle={{
+                    margin: 0,
+                    padding: '1.5rem',
+                    backgroundColor: '#f9f9f9',
+                    fontSize: '0.875rem',
+                    fontFamily: '"JetBrains Mono", monospace',
+                  }}
+                  {...props}
+                >
+                  {String(children).replace(/\n$/, "")}
+                </SyntaxHighlighter>
+              </div>
+            ) : (
+              <code className={className} {...props}>
+                {children}
+              </code>
+            );
+          }
+        }}
+      >
+        {content}
+      </Markdown>
     </div>
   );
 }
