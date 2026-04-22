@@ -88,11 +88,11 @@ section {
   @apply max-w-full h-auto my-8 mx-auto block;
 }
 
-.markdown-body code {
+.markdown-body code:not([class]) {
   @apply font-mono text-sm px-1.5 py-0.5 rounded-sm bg-gray-100 text-brand-red;
 }
 
-.markdown-body.dark code {
+.markdown-body.dark code:not([class]) {
   @apply bg-white/10 text-brand-red;
 }
 

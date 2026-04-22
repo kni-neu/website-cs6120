@@ -18,20 +18,20 @@ You will need [the data](/cs6120f26/data/twitter/): the [`en_US.twitter.txt`](/c
 
 You will be filling out the portions in [the code](/cs6120f26/code/assignment4.py) that say `<YOUR-CODE-HERE>`. There is also helpful unit test code with the suffix `_test()`. For example, 
 
-  ```python
-  def estimate_probabilities():
-    """
-    The graded function that you will need to fill out
-    """
-    # <YOUR-CODE-HERE>
-    return None
+```python
+def estimate_probabilities():
+  """
+  The graded function that you will need to fill out
+  """
+  # <YOUR-CODE-HERE>
+  return None
 
-  def estimate_probabilities_test():
-    """
-    Ungraded: You can use this function to test out estimate_probabilities. 
-    """
-    # Run this function to test 
-    return
-  ```
+def estimate_probabilities_test():
+  """
+  Ungraded: You can use this function to test out estimate_probabilities. 
+  """
+  # Run this function to test 
+  return
+```
 
 You are free to *develop* in any environment (including [virtual machines](https://console.cloud.google.com/compute/instances) and [notebooks](https://console.cloud.google.com/vertex-ai/workbench)), but your submission must be a `*.py` file.

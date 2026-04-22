@@ -16,22 +16,30 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let isMounted = true;
+    const controller = new AbortController();
+    
+    setLoading(true);
     // For HashRouter sites, relative paths (without leading slash) are most robust
     // because they resolve relative to the current pathname (e.g. /cs6120/)
     const relativePath = contentPath.startsWith("/") 
       ? contentPath.substring(1) 
       : contentPath;
 
-    fetch(relativePath)
+    fetch(relativePath, { signal: controller.signal })
       .then((res) => {
         if (!res.ok) throw new Error(`Status: ${res.status}`);
         return res.text();
       })
       .then((text) => {
-        setContent(text);
-        setLoading(false);
+        if (isMounted) {
+          setContent(text);
+          setLoading(false);
+        }
       })
       .catch((err) => {
+        if (err.name === 'AbortError') return;
+        
         console.error("Error loading markdown:", err);
         // Fallback to absolute path detection if relative fails
         const baseUrl = getDynamicBasename();
@@ -40,21 +48,33 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
           : `${baseUrl}/${contentPath}`;
         
         if (fullPath !== relativePath) {
-          fetch(fullPath)
+          fetch(fullPath, { signal: controller.signal })
             .then(res => res.text())
             .then(text => {
-              setContent(text);
-              setLoading(false);
+              if (isMounted) {
+                setContent(text);
+                setLoading(false);
+              }
             })
-            .catch(() => {
-              setContent(`### Error\nFailed to load content from \`${relativePath}\`.\n\n**Debug Info:**\n- **Base detected:** \`${baseUrl || "(root)"}\`\n- **Full Path attempted:** \`${fullPath}\`\n- **Current URL:** \`${window.location.href}\`\n\nPlease ensure the content file exists in your \`/public\` folder.`);
-              setLoading(false);
+            .catch((innerErr) => {
+              if (innerErr.name === 'AbortError') return;
+              if (isMounted) {
+                setContent(`### Error\nFailed to load content from \`${relativePath}\`.\n\n**Debug Info:**\n- **Base detected:** \`${baseUrl || "(root)"}\`\n- **Full Path attempted:** \`${fullPath}\`\n- **Current URL:** \`${window.location.href}\`\n\nPlease ensure the content file exists in your \`/public\` folder.`);
+                setLoading(false);
+              }
             });
         } else {
-          setContent(`### Error\nFailed to load content from \`${relativePath}\`.\n\n**Debug Info:**\n- **Current URL:** \`${window.location.href}\`\n\nPlease ensure the content file exists in your \`/public\` folder.`);
-          setLoading(false);
+          if (isMounted) {
+            setContent(`### Error\nFailed to load content from \`${relativePath}\`.\n\n**Debug Info:**\n- **Current URL:** \`${window.location.href}\`\n\nPlease ensure the content file exists in your \`/public\` folder.`);
+            setLoading(false);
+          }
         }
       });
+
+    return () => {
+      isMounted = false;
+      controller.abort();
+    };
   }, [contentPath]);
 
   if (loading) {
@@ -67,11 +87,14 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
         remarkPlugins={[remarkGfm]} 
         rehypePlugins={[rehypeRaw]}
         components={{
+          pre({ children }) {
+            return <>{children}</>;
+          },
           code({ className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || "");
             const isInline = !className;
             return !isInline && match ? (
-              <div className="neo-brutalism my-6 overflow-hidden">
+              <div className="neo-brutalism my-6 overflow-hidden w-full">
                 <SyntaxHighlighter
                   style={oneLight}
                   language={match[1]}
@@ -81,7 +104,16 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
                     padding: '1.5rem',
                     backgroundColor: '#f9f9f9',
                     fontSize: '0.875rem',
+                    lineHeight: '1.5',
                     fontFamily: '"JetBrains Mono", monospace',
+                    border: 'none',
+                  }}
+                  codeTagProps={{
+                    style: {
+                      fontFamily: 'inherit',
+                      padding: 0,
+                      margin: 0,
+                    }
                   }}
                   {...props}
                 >

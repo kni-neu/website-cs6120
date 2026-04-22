@@ -47,7 +47,7 @@ export default function AssignmentPage() {
         </div>
 
         <div className="bg-white p-8 md:p-12 neo-brutalism bg-[url('https://www.transparenttextures.com/patterns/notebook.png')]">
-          <MarkdownSection contentPath={`/content/assignments/${id}.md`} className="prose-xl" />
+          <MarkdownSection contentPath={`/content/assignments/${id}.md`} />
         </div>
         
         <div className="mt-12 p-8 bg-brand-black text-white flex flex-col md:flex-row justify-between items-center gap-8">
