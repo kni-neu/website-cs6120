@@ -7,24 +7,19 @@
  */
 export function getDynamicBasename() {
   const path = window.location.pathname;
-  const pathSegments = path.split('/').filter(Boolean);
   
-  // Clean segments and find the first known route
-  const appRoutes = ['schedule', 'assignments', 'personnel', 'syllabus'];
-  const routeIndex = pathSegments.findIndex(segment => 
-    appRoutes.includes(segment.toLowerCase())
-  );
+  // For index.html, we want the directory it is in
+  if (path.endsWith('/index.html')) {
+    const base = path.replace('/index.html', '');
+    return base === '/' ? '' : base;
+  }
+  
+  // If it's a directory path like /cs6120/, return /cs6120
+  if (path.endsWith('/')) {
+    const base = path.slice(0, -1);
+    return base === '/' ? '' : base;
+  }
 
-  // If a route is found at index > 0, the leading segments are the basename
-  if (routeIndex > 0) {
-    return '/' + pathSegments.slice(0, routeIndex).join('/');
-  }
-  
-  // Special case for your specific folder if it looks like a course subdirectory
-  // Matches segments like /cs6120, /cs6120f26, etc.
-  if (pathSegments.length > 0 && pathSegments[0].toLowerCase().startsWith('cs6')) {
-    return `/${pathSegments[0]}`;
-  }
-  
-  return '';
+  // If it's a root path or anything else, return as is (but handle root correctly)
+  return path === '/' ? '' : path;
 }

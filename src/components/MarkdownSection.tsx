@@ -13,13 +13,13 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Ensure the path works correctly when hosted in a subdirectory
-    const baseUrl = getDynamicBasename();
-    const fullPath = contentPath.startsWith("/") 
-      ? `${baseUrl}${contentPath}` 
-      : `${baseUrl}/${contentPath}`;
+    // For HashRouter sites, relative paths (without leading slash) are most robust
+    // because they resolve relative to the current pathname (e.g. /cs6120/)
+    const relativePath = contentPath.startsWith("/") 
+      ? contentPath.substring(1) 
+      : contentPath;
 
-    fetch(fullPath)
+    fetch(relativePath)
       .then((res) => {
         if (!res.ok) throw new Error(`Status: ${res.status}`);
         return res.text();
@@ -30,8 +30,27 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
       })
       .catch((err) => {
         console.error("Error loading markdown:", err);
-        setContent(`### Error\nFailed to load content from \`${fullPath}\`.\n\n**Debug Info:**\n- **Base detected:** \`${baseUrl || "(root)"}\`\n- **Full Path:** \`${fullPath}\`\n- **Current URL:** \`${window.location.href}\`\n\nPlease ensure the content file exists in your \`/public\` folder.`);
-        setLoading(false);
+        // Fallback to absolute path detection if relative fails
+        const baseUrl = getDynamicBasename();
+        const fullPath = contentPath.startsWith("/") 
+          ? `${baseUrl}${contentPath}` 
+          : `${baseUrl}/${contentPath}`;
+        
+        if (fullPath !== relativePath) {
+          fetch(fullPath)
+            .then(res => res.text())
+            .then(text => {
+              setContent(text);
+              setLoading(false);
+            })
+            .catch(() => {
+              setContent(`### Error\nFailed to load content from \`${relativePath}\`.\n\n**Debug Info:**\n- **Base detected:** \`${baseUrl || "(root)"}\`\n- **Full Path attempted:** \`${fullPath}\`\n- **Current URL:** \`${window.location.href}\`\n\nPlease ensure the content file exists in your \`/public\` folder.`);
+              setLoading(false);
+            });
+        } else {
+          setContent(`### Error\nFailed to load content from \`${relativePath}\`.\n\n**Debug Info:**\n- **Current URL:** \`${window.location.href}\`\n\nPlease ensure the content file exists in your \`/public\` folder.`);
+          setLoading(false);
+        }
       });
   }, [contentPath]);
 

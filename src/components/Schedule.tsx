@@ -31,25 +31,8 @@ export function Schedule() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          <div className="lg:col-span-8 bg-white/5 p-8 border border-white/10">
-            <MarkdownSection contentPath="/content/schedule.md" className="markdown-body dark" />
-          </div>
-          
-          <div className="lg:col-span-4 space-y-8">
-            <div className="bg-brand-red p-8 text-white relative overflow-hidden group">
-               <h3 className="text-2xl font-black mb-4 relative z-10">GCP Credits</h3>
-               <p className="text-sm opacity-90 mb-6 relative z-10">
-                 Through a generous grant from Google, students have access to cloud computing credits for training and inference.
-               </p>
-               <Button variant="outline" className="bg-transparent border-white text-white rounded-none hover:bg-white hover:text-brand-red w-full font-bold relative z-10">
-                 REDEEM CREDITS
-               </Button>
-               <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:scale-110 transition-transform duration-500">
-                 <ExternalLink className="w-24 h-24" />
-               </div>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto bg-white/5 p-8 border border-white/10">
+          <MarkdownSection contentPath="/content/schedule.md" className="markdown-body dark" />
         </div>
       </div>
     </section>

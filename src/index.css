@@ -44,6 +44,10 @@ section {
   @apply text-gray-600 leading-relaxed;
 }
 
+.markdown-body a {
+  @apply text-brand-red font-bold underline underline-offset-4 decoration-brand-red/30 hover:decoration-brand-red transition-all;
+}
+
 .markdown-body h1 {
   @apply text-4xl font-serif font-black mb-6 text-black;
 }
