@@ -9,16 +9,8 @@ By the end of this class, students will have first-hand knowledge and be able to
 
 ## Course Meeting Times
 - **Lecture:** Mondays, 4:00 PM – 7:20 PM
-- **Location:** San Jose, Room 902/903
+- **Location:** San Jose, Room TBD
 - **Dates:** Fall 2026
-
-## Key Topics
-- **Deep Learning in NLP**
-- **Language Modeling First Principles**
-- **Word/Sentence Representations**
-- **Sequence and Attention Models**
-- **Large Language Models (LLMs)**
-- **Agentic Workflows and Applications**
 
 ## Project Oriented
 This course is heavily project oriented, where students will build and serve applications that leverage modern capabilities. All materials can be attained from open source (even LLMs, like Facebook’s Llama 3.) Because of the nature of the rapidly progressing field, a core part of the curriculum will be learning to read and understand papers on ArXiv. Through a generous grant from Google, students will have access to cloud computing credits to leverage resources through Google Cloud Compute (GCP), which they can use for both training and inference.
@@ -29,10 +21,11 @@ While we will primarily use modern research papers and online resources, the fol
 
 ## Grading Policies
 Grading is based on a mix of individual and group efforts across projects and participation:
-- **Participation & Quizzes:** 10%
-- **Individual Projects:** 40%
-- **Final Group Project:** 50%
-  - *Final projects involve building and serving a functional NLP application.*
+- **Participation:** 10%
+- **Labs:** 10%
+- **Assignments:** 20%
+- **Reading Groups:** 20%
+- **Final Group Projects:** 20%
+- **Final Exam** 20%
 
-## Academic Integrity
-Students are expected to follow the university's academic integrity policies. While collaboration and discussion are encouraged, all submitted code and write-ups must represent the work of the student or group. Use of AI tools is permitted (and encouraged for learning) but must be properly attributed and used as a supplement to, not a replacement for, your own understanding.
+Labs must be turned in by the following lecture. Late assignments will have 3 point deductions each weekday until the following lecture. You must notify instructional staff (via e-mail) ahead of any absences.

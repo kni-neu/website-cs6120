@@ -56,18 +56,18 @@ export const courseData = {
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
-    {
-       name: "Newton",
-       role: "Your Friendly Neighborhood Pup",
-       officeHours: "Treats and I'll come",
-       image: "https://course.ccs.neu.edu/cs6120s26/assets/img/newton.jpg"
-    },
-    {
-       name: "Rosie",
-       role: "A dog who loves NLP and naps",
-       officeHours: "Non-napping hours",
-       image: "https://course.ccs.neu.edu/cs6120s26/assets/img/rosie-cropped.jpg"
-    }
+    // {
+    //    name: "Newton",
+    //    role: "Your Friendly Neighborhood Pup",
+    //    officeHours: "Treats and I'll come",
+    //    image: "https://course.ccs.neu.edu/cs6120s26/assets/img/newton.jpg"
+    // },
+    // {
+    //    name: "Rosie",
+    //    role: "A dog who loves NLP and naps",
+    //    officeHours: "Non-napping hours",
+    //    image: "https://course.ccs.neu.edu/cs6120s26/assets/img/rosie-cropped.jpg"
+    // }
   ],
   announcements: [
     {
@@ -76,6 +76,7 @@ export const courseData = {
       content: "Natural Language Processing. Looking forward to the semester!"
     }
   ],
+  readingGroupSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTf4Eog2QIdH8f3fA4Kz7K_uE8o0yI4I8A0zD-vQG7u8x4XN-zUo8S1X9H6Wq_I_c0b-N-z_S0_S/pubhtml?widget=true&amp;headers=false",
   schedule: scheduleData,
   projects: [
     {

@@ -45,6 +45,7 @@ export function Footer() {
             <li><Link to="/#syllabus" onClick={(e) => handleLinkClick(e, "/#syllabus")} className="hover:text-brand-red transition-colors">Syllabus</Link></li>
             <li><Link to="/schedule" className="hover:text-brand-red transition-colors">Schedule</Link></li>
             <li><Link to="/assignments" className="hover:text-brand-red transition-colors">Assignments</Link></li>
+            <li><Link to="/reading-group" className="hover:text-brand-red transition-colors">Reading Group</Link></li>
             <li><Link to="/#personnel" onClick={(e) => handleLinkClick(e, "/#personnel")} className="hover:text-brand-red transition-colors">Personnel</Link></li>
           </ul>
         </div>

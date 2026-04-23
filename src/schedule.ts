@@ -100,8 +100,20 @@ export const scheduleData = [
     application: "Autocompleting words and sentences",
     readingGroup: "Topic Modeling with Latent Dirichlet Allocation",
     readingGroupLink: "https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf",
-    lab: "Laboratory - N-Grams and Building Language Models",
-    labLink: "https://colab.research.google.com/drive/1Ul6HAglGBoc53yAIfui-pgeTso7wMB26",
+    labs: [
+      {
+        title: "Data Processing for N-Grams",
+        link: "https://colab.research.google.com/drive/1Ul6HAglGBoc53yAIfui-pgeTso7wMB26"
+      },
+      {
+        title: "N-Grams and OOV Words",
+        link: "https://colab.research.google.com/drive/1bSeH7jy3F8sgdPTDlYu8gdJW1IvuvucX"
+      },
+      {
+        title: "Building N-Gram Models",
+        link: "https://colab.research.google.com/drive/1Ul6HAglGBoc53yAIfui-pgeTso7wMB26"
+      }
+    ],
     homework: "Assignment 4: Autocomplete",
     homeworkLink: "/assignments/hw4",
   },
@@ -220,8 +232,16 @@ export const scheduleData = [
       "Creating and Evaluating Agentic Workflows",
       "Agent Communications and Standardization"
     ],
-    lab: "Laboratory - Agentic Workflows",
-    labLink: "https://colab.research.google.com/drive/1EkHKTeXei1VrGus9AYugknkOKAg22ea1",
+    labs: [
+      {
+        title: "Laboratory - Agentic Workflows",
+        link: "https://colab.research.google.com/drive/1EkHKTeXei1VrGus9AYugknkOKAg22ea1"
+      },
+      {
+        title: "Laboratory - OpenClaw Installation",
+        link: "../assets/pdf/lab-week14.pdf"
+      }
+    ],
   },
   { 
     week: 12, 
@@ -237,8 +257,6 @@ export const scheduleData = [
     ],
     readingGroup: "Low Rank Approximations for DNN Tuning",
     readingGroupLink: "https://arxiv.org/abs/1706.03762",
-    lab: "Laboratory - OpenClaw Installation",
-    labLink: "../assets/pdf/lab-week14.pdf",
     homework: "Final Report",
     homeworkLink: "/assignments/final-project",
   },

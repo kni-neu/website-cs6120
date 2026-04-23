@@ -120,31 +120,39 @@ export default function SchedulePage() {
                 {/* Detailed Activities */}
                 <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Submissions */}
-                  {(week.lab || week.homework) && (
+                  {(week.lab || week.homework || (week.labs && week.labs.length > 0)) && (
                     <div className="space-y-6">
                       <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-[-8px]">Submissions</span>
                       <div className="space-y-4 pt-4 border-t border-black/5">
-                        {week.lab && (
-                          <div className="flex gap-3">
-                            <FlaskConical className="w-5 h-5 text-brand-red shrink-0 mt-1" />
-                            <div>
-                              <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-1">Laboratory</span>
-                              {week.labLink ? (
-                                week.labLink.startsWith('http') ? (
-                                  <a href={week.labLink} target="_blank" rel="noreferrer" className="text-sm font-bold text-brand-red hover:underline decoration-2 underline-offset-4 decoration-current transition-all leading-tight block">
-                                    {week.lab}
-                                  </a>
+                        {/* Multiple Labs Handling */}
+                        {(() => {
+                          const allLabs = [];
+                          if (week.lab) allLabs.push({ title: week.lab, link: week.labLink });
+                          if (week.labs) allLabs.push(...week.labs);
+                          
+                          return allLabs.map((labItem, lIdx) => (
+                            <div key={lIdx} className="flex gap-3">
+                              <FlaskConical className="w-5 h-5 text-brand-red shrink-0 mt-1" />
+                              <div>
+                                <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-1">Laboratory</span>
+                                {labItem.link ? (
+                                  labItem.link.startsWith('http') ? (
+                                    <a href={labItem.link} target="_blank" rel="noreferrer" className="text-sm font-bold text-brand-red hover:underline decoration-2 underline-offset-4 decoration-current transition-all leading-tight block">
+                                      {labItem.title}
+                                    </a>
+                                  ) : (
+                                    <Link to={labItem.link} className="text-sm font-bold text-brand-red hover:underline decoration-2 underline-offset-4 decoration-current transition-all leading-tight block">
+                                      {labItem.title}
+                                    </Link>
+                                  )
                                 ) : (
-                                  <Link to={week.labLink} className="text-sm font-bold text-brand-red hover:underline decoration-2 underline-offset-4 decoration-current transition-all leading-tight block">
-                                    {week.lab}
-                                  </Link>
-                                )
-                              ) : (
-                                <p className="text-sm font-bold leading-tight">{week.lab}</p>
-                              )}
+                                  <p className="text-sm font-bold leading-tight">{labItem.title}</p>
+                                )}
+                              </div>
                             </div>
-                          </div>
-                        )}
+                          ));
+                        })()}
+
                         {week.homework && (
                           <div className="flex gap-3">
                             <PenTool className="w-5 h-5 text-brand-red shrink-0 mt-1" />

@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import SchedulePage from "./pages/SchedulePage";
 import AssignmentPage from "./pages/AssignmentPage";
 import AssignmentsPage from "./pages/AssignmentsPage";
+import ReadingGroupPage from "./pages/ReadingGroupPage";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/schedule" element={<SchedulePage />} />
         <Route path="/assignments" element={<AssignmentsPage />} />
         <Route path="/assignments/:id" element={<AssignmentPage />} />
+        <Route path="/reading-group" element={<ReadingGroupPage />} />
       </Routes>
     </Router>
   );

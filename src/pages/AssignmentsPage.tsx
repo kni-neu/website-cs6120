@@ -13,7 +13,28 @@ export default function AssignmentsPage() {
     !item.homework.toLowerCase().includes('final report') &&
     !(item.homeworkLink && item.homeworkLink.includes('final-project'))
   );
-  const labs = courseData.schedule.filter(item => item.lab);
+
+  const labs = courseData.schedule.flatMap(item => {
+    const weekLabs = [];
+    if (item.lab) {
+      weekLabs.push({
+        title: item.lab,
+        link: item.labLink,
+        week: item.week
+      });
+    }
+    if (item.labs) {
+      item.labs.forEach((lab: any) => {
+        weekLabs.push({
+          title: lab.title,
+          link: lab.link,
+          week: item.week
+        });
+      });
+    }
+    return weekLabs;
+  });
+
   const projects = (courseData as any).projects || [];
 
   return (
@@ -100,12 +121,12 @@ export default function AssignmentsPage() {
                        <Badge className="bg-gray-100 text-gray-800 rounded-none text-[10px]">Week {lab.week}</Badge>
                     </div>
                     <h3 className="text-lg font-black mb-4 leading-tight group-hover:text-brand-red transition-colors">
-                      {lab.lab}
+                      {lab.title}
                     </h3>
-                    {(lab as any).labLink ? (
-                      (lab as any).labLink.startsWith('http') ? (
+                    {lab.link ? (
+                      lab.link.startsWith('http') ? (
                         <a 
-                           href={(lab as any).labLink} 
+                           href={lab.link} 
                            target="_blank"
                            rel="noreferrer"
                            className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-brand-red hover:translate-x-1 transition-transform"
@@ -114,7 +135,7 @@ export default function AssignmentsPage() {
                         </a>
                       ) : (
                         <Link 
-                           to={(lab as any).labLink} 
+                           to={lab.link} 
                            className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-brand-red hover:translate-x-1 transition-transform"
                         >
                           LAB MATERIALS <ArrowRight className="w-3 h-3" />

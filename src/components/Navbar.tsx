@@ -22,6 +22,7 @@ export function Navbar() {
     { label: "Syllabus", href: "/#syllabus" },
     { label: "Schedule", href: "/schedule" },
     { label: "Assignments", href: "/assignments" },
+    { label: "Reading", href: "/reading-group" },
     { label: "Personnel", href: "/#personnel" },
   ];
 
