@@ -12,15 +12,9 @@ export function resolveAssetPath(path: string): string {
   }
 
   // Clean up the input path (remove leading slash if present)
+  // Returning a relative path (e.g. "images/photo.jpg") is most robust for 
+  // HashRouter deployments in subfolders, as it resolves relative to index.html.
   const cleanPath = path.startsWith("/") ? path.substring(1) : path;
   
-  // Find the directory of the current page.
-  // For /cs6120f26/index.html, this is /cs6120f26/
-  // For /index.html, this is /
-  const pathname = window.location.pathname;
-  const directory = pathname.substring(0, pathname.lastIndexOf('/') + 1);
-  
-  // Resolve relative to the directory where index.html is
-  // This works perfectly for HashRouter deployments.
-  return directory + cleanPath;
+  return cleanPath;
 }
