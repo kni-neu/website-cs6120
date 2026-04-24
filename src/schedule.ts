@@ -15,7 +15,7 @@ export const scheduleData = [
     application: "Machine Translation, Summarization, and Chatbots",
     reading: "Jurafsky & Martin Ch. 1",
     lab: "Laboratory - Getting Started on Google Cloud with Your Credits",
-    labLink: "../assets/pdf/lab-1.pdf",
+    labLink: "assets/pdf/lab-1.pdf",
     homework: "Assignment 1: A First Look at Processing Language",
     homeworkLink: "/assignments/hw1",
   },
@@ -34,7 +34,7 @@ export const scheduleData = [
     reading: "Linear Algebra and Gradients (Gradient Notes)",
     readingLink: "https://web.stanford.edu/class/cs224n/readings/gradient-notes.pdf",
     lab: "Laboratory - Containerization in the Cloud",
-    labLink: "../assets/pdf/lab-2.pdf",
+    labLink: "assets/pdf/lab-2.pdf",
     homework: "Assignment 2: Text Classification",
     homeworkLink: "/assignments/hw2",
   },
@@ -154,7 +154,7 @@ export const scheduleData = [
     readingGroup: "DeepSeek v3.2 Technical Report",
     readingGroupLink: "https://arxiv.org/abs/2512.02556",
     lab: "Laboratory - Serving an LLM (GCP/NEU)",
-    labLink: "../assets/pdf/lab-11.1.pdf",
+    labLink: "assets/pdf/lab-11.1.pdf",
     homework: "Assignment 6: RNN Implementation",
     homeworkLink: "/assignments/hw6",
   },
@@ -239,7 +239,7 @@ export const scheduleData = [
       },
       {
         title: "Laboratory - OpenClaw Installation",
-        link: "../assets/pdf/lab-week14.pdf"
+        link: "assets/pdf/lab-week14.pdf"
       }
     ],
   },

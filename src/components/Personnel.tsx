@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { courseData } from "@/src/constants";
 import { Link } from "react-router-dom";
+import { resolveAssetPath } from "@/src/utils/resolveAssetPath";
 
 export function Personnel() {
   return (
@@ -29,7 +30,7 @@ export function Personnel() {
             <Card className="flex flex-col w-full rounded-none border-2 border-black overflow-hidden group">
               <Link to={`/personnel/${courseData.instructor.slug}`} className="block aspect-[4/5] bg-gray-100 relative overflow-hidden">
                 <img 
-                  src={courseData.instructor.image} 
+                  src={resolveAssetPath(courseData.instructor.image)} 
                   alt={courseData.instructor.name}
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -71,7 +72,7 @@ export function Personnel() {
               <Card className="flex flex-col w-full rounded-none border border-gray-100 hover:border-black/20 transition-all overflow-hidden group">
                 <Link to={`/personnel/${(person as any).slug}`} className="block aspect-[4/5] bg-gray-50 relative overflow-hidden">
                   <img 
-                    src={person.image} 
+                    src={resolveAssetPath(person.image)} 
                     alt={person.name}
                     className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                     referrerPolicy="no-referrer"

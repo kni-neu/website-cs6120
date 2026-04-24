@@ -4,6 +4,7 @@ import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { MarkdownSection } from "../components/MarkdownSection";
 import { courseData } from "../constants";
+import { resolveAssetPath } from "../utils/resolveAssetPath";
 import { ArrowLeft, Mail, Github, Linkedin, Globe, MapPin } from "lucide-react";
 
 export default function ProfilePage() {
@@ -50,7 +51,7 @@ export default function ProfilePage() {
             <div className="lg:col-span-4">
               <div className="neo-brutalism bg-white overflow-hidden mb-8">
                 <img 
-                  src={person.image} 
+                  src={resolveAssetPath(person.image)} 
                   alt={person.name} 
                   className="w-full aspect-[4/5] object-cover"
                   referrerPolicy="no-referrer"

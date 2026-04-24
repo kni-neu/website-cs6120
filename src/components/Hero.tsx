@@ -3,6 +3,7 @@ import { ArrowRight, Mail, MapPin, MapPinned } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { courseData } from "@/src/constants";
+import { resolveAssetPath } from "@/src/utils/resolveAssetPath";
 
 export function Hero() {
   return (
@@ -81,7 +82,9 @@ export function Hero() {
               </div>
               <div className="flex items-center justify-between pt-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gray-200" />
+                  <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden">
+                    <img src={resolveAssetPath(courseData.instructor.image)} alt={courseData.instructor.name} className="w-full h-full object-cover" />
+                  </div>
                   <div>
                     <span className="text-xs font-bold block uppercase tracking-tighter">Instructor</span>
                     <span className="font-bold">{courseData.instructor.name}</span>
