@@ -17,5 +17,11 @@ export function resolveAssetPath(path: string): string {
   // For https://course.ccs.neu.edu/cs6120f26/#/personnel, the base is /cs6120f26/.
   // So 'images/karl_prof.jpg' becomes '/cs6120f26/images/karl_prof.jpg'.
   
+  // Map old 'images/' path to our new 'assets/img/' structure
+  // This helps match the server's preferred folder structure (like cs6120f25)
+  if (cleanPath.startsWith("images/")) {
+    return "assets/img/" + cleanPath.substring(7);
+  }
+  
   return cleanPath;
 }

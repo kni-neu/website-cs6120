@@ -70,7 +70,7 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
               />
             );
           },
-          code({ className, children, ...props }) {
+          code({ className, children }) {
             const match = /language-(\w+)/.exec(className || "");
             const isInline = !className;
             return !isInline && match ? (
@@ -95,13 +95,12 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
                       margin: 0,
                     }
                   }}
-                  {...props}
                 >
                   {String(children).replace(/\n$/, "")}
                 </SyntaxHighlighter>
               </div>
             ) : (
-              <code className={className} {...props}>
+              <code className={className}>
                 {children}
               </code>
             );
