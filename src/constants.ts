@@ -24,7 +24,7 @@ export const courseData = {
     linkedin: "https://www.linkedin.com/in/karlni/",
     neu: "https://www.khoury.northeastern.edu/people/karl-ni/",
     // Local image path
-    image: "images/karl_prof.jpg"
+    image: "assets/img/karl_prof.jpg"
   },
   tagline: "A mix of first principles with heavy doses of software engineering in the project setting. Build and serve modern NLP applications leveraging ML, statistics, LLMs, and agents.",
   quote: "\"Language is the infinite use of finite means.\"\n  — Wilhelm von Humboldt",
@@ -36,7 +36,7 @@ export const courseData = {
        slug: "sherwin-vahidimowlavi",
        role: "Head Teaching Assistant",
        officeHours: "Wed 12-2pm, 10th Floor / Zoom",
-       image: "images/sherwin.jpg",
+       image: "assets/img/sherwin.jpg",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
@@ -45,7 +45,7 @@ export const courseData = {
        slug: "yue-liang",
        role: "Teaching Assistant",
        officeHours: "Tue 3-5pm, 10th Floor",
-       image: "images/yue.jpg",
+       image: "assets/img/yue.jpg",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
@@ -54,7 +54,7 @@ export const courseData = {
        slug: "yu-chang-shih",
        role: "Teaching Assistant",
        officeHours: "Fri 1-3pm, 10th Floor / Zoom",
-       image: "images/yu_chang.jpg",
+       image: "assets/img/yu_chang.jpg",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },

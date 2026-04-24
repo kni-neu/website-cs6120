@@ -15,11 +15,18 @@ export function resolveAssetPath(path: string): string {
   // Ensure we don't have a leading slash for relative resolution
   const cleanPath = path.startsWith("/") ? path.substring(1) : path;
   
+  // Map old 'images/' path to our new 'assets/img/' structure
+  // This helps match the server's preferred folder structure (like cs6120f25)
+  let resolvedPath = cleanPath;
+  if (cleanPath.startsWith("images/")) {
+    resolvedPath = "assets/img/" + cleanPath.substring(7);
+  }
+  
   // Resolve relative paths
   // getDynamicBasename() returns something like "/cs6120f26"
   const basename = getDynamicBasename();
   
   // Construct absolute path from root
-  // E.g., /cs6120f26/images/photo.jpg
-  return `${basename}/${cleanPath}`.replace(/\/+/g, "/");
+  // E.g., /cs6120f26/assets/img/photo.jpg
+  return `${basename}/${resolvedPath}`.replace(/\/+/g, "/");
 }
