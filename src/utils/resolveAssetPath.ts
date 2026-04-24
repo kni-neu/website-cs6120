@@ -6,15 +6,16 @@
  * @param path The path relative to the public folder (e.g., "images/photo.jpg")
  */
 export function resolveAssetPath(path: string): string {
-  // If it's already a full URL or blob, return as is
   if (!path || path.startsWith("http") || path.startsWith("blob:") || path.startsWith("data:")) {
     return path;
   }
 
-  // Clean up the input path (remove leading slash if present)
-  // Returning a relative path (e.g. "images/photo.jpg") is most robust for 
-  // HashRouter deployments in subfolders, as it resolves relative to index.html.
+  // Ensure we don't have a leading slash for relative resolution
   const cleanPath = path.startsWith("/") ? path.substring(1) : path;
+  
+  // In HashRouter, relative paths resolve against the base path (excluding the # portion).
+  // For https://course.ccs.neu.edu/cs6120f26/#/personnel, the base is /cs6120f26/.
+  // So 'images/karl_prof.jpg' becomes '/cs6120f26/images/karl_prof.jpg'.
   
   return cleanPath;
 }

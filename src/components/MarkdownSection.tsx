@@ -4,7 +4,6 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { getDynamicBasename } from "../utils/getBasename";
 import { resolveAssetPath } from "../utils/resolveAssetPath";
 
 interface MarkdownSectionProps {
@@ -77,7 +76,7 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
             return !isInline && match ? (
               <div className="neo-brutalism my-6 overflow-hidden w-full">
                 <SyntaxHighlighter
-                  style={oneLight}
+                  style={oneLight as any}
                   language={match[1]}
                   PreTag="div"
                   customStyle={{
