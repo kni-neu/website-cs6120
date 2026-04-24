@@ -3,6 +3,7 @@ import { Mail, Github, Globe, Linkedin, MessageSquare, Instagram, Twitter, Gradu
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { courseData } from "@/src/constants";
+import { Link } from "react-router-dom";
 
 export function Personnel() {
   return (
@@ -26,17 +27,19 @@ export function Personnel() {
             className="flex"
           >
             <Card className="flex flex-col w-full rounded-none border-2 border-black overflow-hidden group">
-              <div className="aspect-[4/5] bg-gray-100 relative overflow-hidden">
+              <Link to={`/personnel/${courseData.instructor.slug}`} className="block aspect-[4/5] bg-gray-100 relative overflow-hidden">
                 <img 
                   src={courseData.instructor.image} 
                   alt={courseData.instructor.name}
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
-              </div>
+              </Link>
               <CardContent className="p-4 flex flex-col flex-grow">
                 <Badge className="bg-brand-red mb-2 rounded-none uppercase text-[9px] w-fit">Instructor</Badge>
-                <h3 className="text-base font-black leading-tight mb-1">{courseData.instructor.name}</h3>
+                <Link to={`/personnel/${courseData.instructor.slug}`} className="block hover:text-brand-red transition-colors">
+                  <h3 className="text-base font-black leading-tight mb-1">{courseData.instructor.name}</h3>
+                </Link>
                 <p className="text-gray-500 text-[9px] mb-4 font-serif italic">Lead Instructor</p>
                 
                 <div className="space-y-2 mt-auto pt-4 border-t border-black/5 text-[10px]">
@@ -66,17 +69,19 @@ export function Personnel() {
               className="flex"
             >
               <Card className="flex flex-col w-full rounded-none border border-gray-100 hover:border-black/20 transition-all overflow-hidden group">
-                <div className="aspect-[4/5] bg-gray-50 relative overflow-hidden">
+                <Link to={`/personnel/${(person as any).slug}`} className="block aspect-[4/5] bg-gray-50 relative overflow-hidden">
                   <img 
                     src={person.image} 
                     alt={person.name}
                     className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                     referrerPolicy="no-referrer"
                   />
-                </div>
+                </Link>
                 <CardContent className="p-4 flex flex-col flex-grow">
                   <Badge className="bg-gray-200 text-gray-700 mb-2 rounded-none uppercase text-[9px] w-fit">Staff</Badge>
-                  <h4 className="text-base font-black leading-tight mb-1">{person.name}</h4>
+                  <Link to={`/personnel/${(person as any).slug}`} className="block hover:text-brand-red transition-colors">
+                    <h4 className="text-base font-black leading-tight mb-1">{person.name}</h4>
+                  </Link>
                   <p className="text-gray-400 text-[9px] mb-4 font-serif italic truncate">{person.role}</p>
                   
                   <div className="space-y-2 mt-auto pt-4 border-t border-black/5 text-[10px]">

@@ -4,6 +4,7 @@ import SchedulePage from "./pages/SchedulePage";
 import AssignmentPage from "./pages/AssignmentPage";
 import AssignmentsPage from "./pages/AssignmentsPage";
 import ReadingGroupPage from "./pages/ReadingGroupPage";
+import ProfilePage from "./pages/ProfilePage";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/assignments" element={<AssignmentsPage />} />
         <Route path="/assignments/:id" element={<AssignmentPage />} />
         <Route path="/reading-group" element={<ReadingGroupPage />} />
+        <Route path="/personnel/:slug" element={<ProfilePage />} />
       </Routes>
     </Router>
   );
