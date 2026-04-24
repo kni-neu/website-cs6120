@@ -21,6 +21,6 @@ Welcome to CS6120! It's nice to meet you. You can find my academic and commerica
 I'm looking forward to getting to know everyone this semester. Please feel free to stop by during <a href="https://shorturl.at/Clp29">office hours</a>.
 
 <div className="flex justify-center mt-12 mb-8">
-  <img src="images/karl-interests.png" width="750" className="neo-brutalism border-4 border-black" />
+  <img src="https://course.ccs.neu.edu/cs6120f25/assets/img/karl-interests.png" width="750" className="neo-brutalism border-4 border-black" />
 </div>
 
