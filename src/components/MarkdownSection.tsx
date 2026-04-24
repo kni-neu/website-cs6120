@@ -21,13 +21,9 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
     const controller = new AbortController();
     
     setLoading(true);
-    // For HashRouter sites, relative paths (without leading slash) are most robust
-    // because they resolve relative to the current pathname (e.g. /cs6120/)
-    const relativePath = contentPath.startsWith("/") 
-      ? contentPath.substring(1) 
-      : contentPath;
+    const resolvedPath = resolveAssetPath(contentPath);
 
-    fetch(relativePath, { signal: controller.signal })
+    fetch(resolvedPath, { signal: controller.signal })
       .then((res) => {
         if (!res.ok) throw new Error(`Status: ${res.status}`);
         return res.text();
@@ -42,33 +38,9 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
         if (err.name === 'AbortError') return;
         
         console.error("Error loading markdown:", err);
-        // Fallback to absolute path detection if relative fails
-        const baseUrl = getDynamicBasename();
-        const fullPath = contentPath.startsWith("/") 
-          ? `${baseUrl}${contentPath}` 
-          : `${baseUrl}/${contentPath}`;
-        
-        if (fullPath !== relativePath) {
-          fetch(fullPath, { signal: controller.signal })
-            .then(res => res.text())
-            .then(text => {
-              if (isMounted) {
-                setContent(text);
-                setLoading(false);
-              }
-            })
-            .catch((innerErr) => {
-              if (innerErr.name === 'AbortError') return;
-              if (isMounted) {
-                setContent(`### Error\nFailed to load content from \`${relativePath}\`.\n\n**Debug Info:**\n- **Base detected:** \`${baseUrl || "(root)"}\`\n- **Full Path attempted:** \`${fullPath}\`\n- **Current URL:** \`${window.location.href}\`\n\nPlease ensure the content file exists in your \`/public\` folder.`);
-                setLoading(false);
-              }
-            });
-        } else {
-          if (isMounted) {
-            setContent(`### Error\nFailed to load content from \`${relativePath}\`.\n\n**Debug Info:**\n- **Current URL:** \`${window.location.href}\`\n\nPlease ensure the content file exists in your \`/public\` folder.`);
-            setLoading(false);
-          }
+        if (isMounted) {
+          setContent(`### Error\nFailed to load content from \`${resolvedPath}\`.\n\n**Debug Info:**\n- **Resolved Path:** \`${resolvedPath}\`\n- **Original Path:** \`${contentPath}\`\n- **Current URL:** \`${window.location.href}\`\n\nPlease ensure the content file exists in your \`/public\` folder.`);
+          setLoading(false);
         }
       });
 

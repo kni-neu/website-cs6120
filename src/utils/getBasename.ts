@@ -18,20 +18,22 @@ export function getDynamicBasename() {
     return '';
   }
 
-  // Extract base path. For most course sites, researchers, etc., 
-  // it is host.com/subfolder/index.html.
-  // We want to capture "/subfolder".
-  const segments = pathname.split('/').filter(Boolean);
+  // Extract the directory part of the pathname
+  // For /cs6120f26/index.html -> /cs6120f26
+  // For /~user/course/ -> /~user/course
+  let base = pathname;
   
-  // If the last segment looks like a file name (has a dot), remove it
-  if (segments.length > 0 && segments[segments.length - 1].includes('.')) {
-    segments.pop();
+  // Remove trailing slash for consistency
+  if (base.endsWith('/')) {
+    base = base.slice(0, -1);
+  }
+  
+  // If the last segment has a dot, it's likely a file (like index.html), so remove it
+  const lastSlashIndex = base.lastIndexOf('/');
+  const lastSegment = base.substring(lastSlashIndex + 1);
+  if (lastSegment.includes('.')) {
+    base = base.substring(0, lastSlashIndex);
   }
 
-  // If we are left with nothing, it was root-level file
-  if (segments.length === 0) return '';
-
-  // Return the first segment as the base (this is most common for simple subfolder hosting)
-  // For course.ccs.neu.edu/cs6120f26/, this returns "/cs6120f26"
-  return '/' + segments[0];
+  return base;
 }
