@@ -12,11 +12,11 @@ export function resolveAssetPath(path: string): string {
     return path;
   }
 
+  const base = getDynamicBasename();
+  
   // Clean up the input path (remove leading slash if present)
-  // By returning a relative path (e.g. "images/photo.jpg" instead of "/images/photo.jpg"),
-  // the browser will resolve it relative to wherever index.html is hosted.
-  // This is the most robust way to handle subfolder hosting with HashRouter.
   const cleanPath = path.startsWith("/") ? path.substring(1) : path;
   
-  return cleanPath;
+  // Prepend base to form an absolute path like /cs6120f26/images/photo.jpg
+  return `${base}/${cleanPath}`;
 }

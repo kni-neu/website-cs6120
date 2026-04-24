@@ -5,6 +5,7 @@ import rehypeRaw from "rehype-raw";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { getDynamicBasename } from "../utils/getBasename";
+import { resolveAssetPath } from "../utils/resolveAssetPath";
 
 interface MarkdownSectionProps {
   contentPath: string;
@@ -89,6 +90,14 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
         components={{
           pre({ children }) {
             return <>{children}</>;
+          },
+          img({ src, ...props }) {
+            return (
+              <img 
+                src={src ? resolveAssetPath(src) : undefined} 
+                {...props} 
+              />
+            );
           },
           code({ className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || "");
