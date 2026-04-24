@@ -8,7 +8,7 @@ Welcome to CS6120! It's nice to meet you. You can find my academic and commerica
     </div>
     <div className="neo-brutalism overflow-hidden">
       <a href="https://www.instagram.com/karl_el_fun/">
-        <img src="images/dogafterwk.jpg" alt="painting" className="w-full aspect-square object-cover" />
+        <img src="https://course.ccs.neu.edu/cs6120s26/assets/img/dogafterwk.jpg" alt="painting" className="w-full aspect-square object-cover" />
       </a>
     </div>
     <div className="neo-brutalism overflow-hidden">

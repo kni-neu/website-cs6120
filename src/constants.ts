@@ -36,7 +36,7 @@ export const courseData = {
        slug: "sherwin-vahidimowlavi",
        role: "Head Teaching Assistant",
        officeHours: "Wed 12-2pm, 10th Floor / Zoom",
-       image: "images/sherwin.jpg",
+       image: "https://media.licdn.com/dms/image/v2/C4E03AQHMKyVfrlj-HQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516537039088?e=1778716800&v=beta&t=OM0E6eTO-0_7sogryKt5VZwYXLVsu4lzh-f0FAPPm0I",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
@@ -58,18 +58,18 @@ export const courseData = {
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
-    // {
-    //    name: "Newton",
-    //    role: "Your Friendly Neighborhood Pup",
-    //    officeHours: "Treats and I'll come",
-    //    image: "https://course.ccs.neu.edu/cs6120s26/assets/img/newton.jpg"
-    // },
-    // {
-    //    name: "Rosie",
-    //    role: "A dog who loves NLP and naps",
-    //    officeHours: "Non-napping hours",
-    //    image: "https://course.ccs.neu.edu/cs6120s26/assets/img/rosie-cropped.jpg"
-    // }
+    {
+       name: "Newton",
+       role: "Your Friendly Neighborhood Pup",
+       officeHours: "Treats and I'll come",
+       image: "images/newton.jpg"
+    },
+    {
+       name: "Rosie",
+       role: "A dog who loves NLP and naps",
+       officeHours: "Non-napping hours",
+       image: "images/rosie-cropped.jpg"
+    }
   ],
   announcements: [
     {
