@@ -6,20 +6,32 @@
  * If hosted at the root, it returns an empty string.
  */
 export function getDynamicBasename() {
-  const path = window.location.pathname;
+  const pathname = window.location.pathname;
   
-  // For index.html, we want the directory it is in
-  if (path.endsWith('/index.html')) {
-    const base = path.replace('/index.html', '');
-    return base === '/' ? '' : base;
-  }
-  
-  // If it's a directory path like /cs6120/, return /cs6120
-  if (path.endsWith('/')) {
-    const base = path.slice(0, -1);
-    return base === '/' ? '' : base;
+  // localhost always serves from root
+  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    return '';
   }
 
-  // If it's a root path or anything else, return as is (but handle root correctly)
-  return path === '/' ? '' : path;
+  // Handle root path
+  if (pathname === '/') {
+    return '';
+  }
+
+  // Extract base path. For most course sites, researchers, etc., 
+  // it is host.com/subfolder/index.html.
+  // We want to capture "/subfolder".
+  const segments = pathname.split('/').filter(Boolean);
+  
+  // If the last segment looks like a file name (has a dot), remove it
+  if (segments.length > 0 && segments[segments.length - 1].includes('.')) {
+    segments.pop();
+  }
+
+  // If we are left with nothing, it was root-level file
+  if (segments.length === 0) return '';
+
+  // Return the first segment as the base (this is most common for simple subfolder hosting)
+  // For course.ccs.neu.edu/cs6120f26/, this returns "/cs6120f26"
+  return '/' + segments[0];
 }

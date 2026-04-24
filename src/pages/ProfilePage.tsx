@@ -54,7 +54,6 @@ export default function ProfilePage() {
                   src={resolveAssetPath(person.image)} 
                   alt={person.name} 
                   className="w-full aspect-[4/5] object-cover"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               

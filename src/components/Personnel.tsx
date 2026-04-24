@@ -33,7 +33,6 @@ export function Personnel() {
                   src={resolveAssetPath(courseData.instructor.image)} 
                   alt={courseData.instructor.name}
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
-                  referrerPolicy="no-referrer"
                 />
               </Link>
               <CardContent className="p-4 flex flex-col flex-grow">
@@ -75,7 +74,6 @@ export function Personnel() {
                     src={resolveAssetPath(person.image)} 
                     alt={person.name}
                     className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
-                    referrerPolicy="no-referrer"
                   />
                 </Link>
                 <CardContent className="p-4 flex flex-col flex-grow">
