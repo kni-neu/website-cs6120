@@ -45,7 +45,7 @@ export const courseData = {
        slug: "yue-liang",
        role: "Teaching Assistant",
        officeHours: "Tue 3-5pm, 10th Floor",
-       image: "images/yue.jpg",
+       image: "https://media.licdn.com/dms/image/v2/D4E03AQF1ASVp312eiQ/profile-displayphoto-crop_800_800/B4EZqP4SxQIwAI-/0/1763350490959?e=1778716800&v=beta&t=FFVHKuOjgegEWkuulY_FzdbWD9jIa88C3SHOVFjJob0",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
@@ -54,7 +54,7 @@ export const courseData = {
        slug: "yu-chang-shih",
        role: "Teaching Assistant",
        officeHours: "Fri 1-3pm, 10th Floor / Zoom",
-       image: "images/yu_chang.jpg",
+       image: "https://media.licdn.com/dms/image/v2/C4D03AQG5dqU4C51Ucg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1649728546165?e=2147483647&v=beta&t=cuXobBQV5JOielSga19QrMX5ig1dyEgyu32ASzcTfe4",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
@@ -62,13 +62,13 @@ export const courseData = {
        name: "Newton",
        role: "Your Friendly Neighborhood Pup",
        officeHours: "Treats and I'll come",
-       image: "images/newton.jpg"
+       image: "https://course.ccs.neu.edu/cs6120s26/assets/img/newton.jpg"
     },
     {
        name: "Rosie",
        role: "A dog who loves NLP and naps",
        officeHours: "Non-napping hours",
-       image: "images/rosie-cropped.jpg"
+       image: "https://course.ccs.neu.edu/cs6120s26/assets/img/rosie-cropped.jpg"
     }
   ],
   announcements: [
