@@ -1,20 +1,7 @@
-# Treat all files as text and normalize line endings by default
-* text=auto
-
-# Explicitly mark binary files to prevent corruption
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.pdf binary
-*.gif binary
-*.webp binary
-*.ico binary
-*.pdf binary
-*.woff binary
-*.woff2 binary
-*.ttf binary
-*.otf binary
-*.eot binary
-
-# Handle SVGs as text but ensure LF line endings
-*.svg text eol=lf
+*.pdf -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.gif -text
+*.ico -text
+*.webp -text

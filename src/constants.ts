@@ -24,7 +24,7 @@ export const courseData = {
     linkedin: "https://www.linkedin.com/in/karlni/",
     neu: "https://www.khoury.northeastern.edu/people/karl-ni/",
     // Local image path (Vite will hash this)
-    image: "images/karl_prof.jpg"
+    image: "/images/karl_prof.jpg"
   },
   tagline: "A mix of first principles with heavy doses of software engineering in the project setting. Build and serve modern NLP applications leveraging ML, statistics, LLMs, and agents.",
   quote: "\"Language is the infinite use of finite means.\"\n  — Wilhelm von Humboldt",
