@@ -1,3 +1,5 @@
+import { getDynamicBasename } from "./getBasename";
+
 /**
  * Resolves an asset path by using the current document's directory path.
  * This ensures that assets are resolved correctly from the /public folder.
@@ -9,11 +11,12 @@ export function resolveAssetPath(path: string): string {
     return path;
   }
 
-  // Ensure it starts with a leading slash and is resolved from root
-  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  // Ensure we don't have a leading slash for double-slashing issues
+  const cleanPath = path.startsWith("/") ? path.substring(1) : path;
   
-  // Note: We no longer check a hashed asset map because we want to use 
-  // the original files in the /public directory as requested.
+  // Resolve relative paths using dynamic basename for subdirectories (e.g. /cs6120f26)
+  const basename = getDynamicBasename();
   
-  return cleanPath;
+  // Construct absolute path from root
+  return `${basename}/${cleanPath}`.replace(/\/+/g, "/");
 }
