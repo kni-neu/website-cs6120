@@ -1,1 +1,0 @@
-This file is here to help trigger a Git sync update. You can delete it once your files appear in the sync list.
