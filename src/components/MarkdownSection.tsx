@@ -70,6 +70,22 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
               />
             );
           },
+          a({ href, children, ...props }) {
+            const isExternal = href?.startsWith('http');
+            const isAsset = href?.endsWith('.pdf') || href?.includes('/pdfs/') || href?.includes('/images/');
+            const resolvedHref = (isAsset && href) ? resolveAssetPath(href) : href;
+            
+            return (
+              <a 
+                href={resolvedHref} 
+                target={isExternal || isAsset ? "_blank" : undefined} 
+                rel={isExternal || isAsset ? "noreferrer" : undefined}
+                {...props}
+              >
+                {children}
+              </a>
+            );
+          },
           code({ className, children }) {
             const match = /language-(\w+)/.exec(className || "");
             const isInline = !className;

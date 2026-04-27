@@ -5,6 +5,7 @@ import { courseData } from "../constants";
 import { ArrowLeft, BookOpen, FlaskConical, PenTool, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
+import { resolveAssetPath } from "../utils/resolveAssetPath";
 
 export default function SchedulePage() {
   return (
@@ -141,9 +142,14 @@ export default function SchedulePage() {
                                       {labItem.title}
                                     </a>
                                   ) : (
-                                    <Link to={labItem.link} className="text-sm font-bold text-brand-red hover:underline decoration-2 underline-offset-4 decoration-current transition-all leading-tight block">
+                                    <a 
+                                      href={resolveAssetPath(labItem.link)} 
+                                      target="_blank" 
+                                      rel="noreferrer" 
+                                      className="text-sm font-bold text-brand-red hover:underline decoration-2 underline-offset-4 decoration-current transition-all leading-tight block"
+                                    >
                                       {labItem.title}
-                                    </Link>
+                                    </a>
                                   )
                                 ) : (
                                   <p className="text-sm font-bold leading-tight">{labItem.title}</p>
@@ -159,8 +165,13 @@ export default function SchedulePage() {
                             <div>
                               <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-1">Homework</span>
                               {week.homeworkLink ? (
-                                week.homeworkLink.startsWith('http') ? (
-                                  <a href={week.homeworkLink} target="_blank" rel="noreferrer" className="text-sm font-bold text-brand-red hover:underline decoration-2 underline-offset-4 decoration-current transition-all leading-tight block">
+                                week.homeworkLink.startsWith('http') || week.homeworkLink.endsWith('.pdf') ? (
+                                  <a 
+                                    href={week.homeworkLink.startsWith('http') ? week.homeworkLink : resolveAssetPath(week.homeworkLink)} 
+                                    target="_blank" 
+                                    rel="noreferrer" 
+                                    className="text-sm font-bold text-brand-red hover:underline decoration-2 underline-offset-4 decoration-current transition-all leading-tight block"
+                                  >
                                     {week.homework}
                                   </a>
                                 ) : (

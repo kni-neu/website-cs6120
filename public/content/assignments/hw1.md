@@ -1,6 +1,6 @@
 # Homework 1: Getting started with NLP
 
-Please review the homework in this pdf file. Remember that reading resources can be found in the syllabus. 
+Please review the homework in [this pdf file](pdfs/assignment-1.pdf). Remember that reading resources can be found in the syllabus. 
 
 You will need [the data](https://course.ccs.neu.edu/cs6120f26/data/shakespeare/), which we'll be using throughout the semester. The Bash command is
 

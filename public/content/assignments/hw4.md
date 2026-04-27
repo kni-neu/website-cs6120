@@ -1,7 +1,7 @@
 # Homework 4: Modeling short sequences of words
 -----
 
-Language models provide the capability to predict the most likely set of texts to follow any preceding text, of which the simplest model is the *n*-gram model. We will be building our first language model in this homework trained on Twitter data. Review the homework in this [pdf file]({{ site.baseurl }}/assets/pdf/assignment-4.pdf). Remember that reading resources can be found in the [syllabus]({{ site.baseurl }}/syllabus).
+Language models provide the capability to predict the most likely set of texts to follow any preceding text, of which the simplest model is the *n*-gram model. We will be building our first language model in this homework trained on Twitter data. Review the homework in this [pdf file](pdfs/assignment-4.pdf). Remember that reading resources can be found in the [syllabus]({{ site.baseurl }}/syllabus).
 
 <center>
 <img 

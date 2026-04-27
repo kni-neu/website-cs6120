@@ -5,7 +5,7 @@ In this homework, you will be creating word embeddings from scratch by sampling.
 
 **Note on Terminology**: The terms "word vectors" and "word embeddings" are often used interchangeably. The term "embedding" refers to the fact that we are encoding aspects of a word's meaning in a lower dimensional space. As Wikipedia states, "conceptually it involves a mathematical embedding from a space with one dimension per word to a continuous vector space with a much lower dimension".
 
-Review the homework in this [pdf file]({{ site.baseurl }}/cs6120f26/pdf/assignment-5.pdf). Remember that reading resources can be found in the [syllabus]({{ site.baseurl }}/syllabus).
+Review the homework in this [pdf file](pdfs/assignment-5.pdf). Remember that reading resources can be found in the [syllabus]({{ site.baseurl }}/syllabus).
 
 <center>
 <img 

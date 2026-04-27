@@ -1,6 +1,6 @@
 # Syllabus: CS 6120 - Natural Language Processing
 
-[View Official PDF Syllabus](https://course.ccs.neu.edu/cs6120s26/assets/pdf/nlp_syllabus.pdf)
+[View Official PDF Syllabus](pdfs/nlp_syllabus.pdf)
 
 ## Course Overview
 This course in Natural Language Processing (NLP) is a mix of first principles and heavy doses of software engineering in the project setting. The key objectives are two-fold: (1) teach fundamental concepts of NLP and (2) to provide extensive and practical hands-on modeling experience. Our language modeling curriculum will cover a variety of use cases, including but not limited to sentiment analysis, question / answer, summarization, translation, and more. The core topics to be covered in this course include topic models, word/sentence embedding models, deep attention models, and large language models (LLMs).

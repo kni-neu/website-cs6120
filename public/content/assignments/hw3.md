@@ -1,7 +1,7 @@
 # Homework 3: The minimum edit distance
 -----
 
-In this homework, we will implement a functional and practical autocorrection and minimum edit distance algorithm. We will do so with dynamic programming algorithm determining the minimum edit distance. These models correct words that are 1 and 2 edit distances away. (We say two words are *n* edit distance away from each other when we need *n* edits to change one word into another.) Review the homework in this [pdf file]({{ site.baseurl }}/assets/pdf/assignment-3.pdf). Remember that reading resources can be found in the [syllabus]({{ site.baseurl }}/syllabus).
+In this homework, we will implement a functional and practical autocorrection and minimum edit distance algorithm. We will do so with dynamic programming algorithm determining the minimum edit distance. These models correct words that are 1 and 2 edit distances away. (We say two words are *n* edit distance away from each other when we need *n* edits to change one word into another.) Review the homework in this [pdf file](pdfs/assignment-3.pdf). Remember that reading resources can be found in the [syllabus](/cs6120f26/syllabus).
 
 <center>
 <img 
