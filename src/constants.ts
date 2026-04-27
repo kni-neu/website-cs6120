@@ -78,7 +78,7 @@ export const courseData = {
       content: "Natural Language Processing. Looking forward to the semester!"
     }
   ],
-  readingGroupSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTf4Eog2QIdH8f3fA4Kz7K_uE8o0yI4I8A0zD-vQG7u8x4XN-zUo8S1X9H6Wq_I_c0b-N-z_S0_S/pubhtml?widget=true&amp;headers=false",
+  readingGroupSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRUm-_bbk-UPXGobK-eGsSuEN0CcTUBCJ6HSg_T6av24sMT2Wbz7Tl8U9Jr1cyNkP2IWeg8xoLeNCQP/pubhtml?widget=true&amp;headers=false",
   schedule: scheduleData,
   projects: [
     {
