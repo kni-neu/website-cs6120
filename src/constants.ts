@@ -23,8 +23,8 @@ export const courseData = {
     scholar: "https://scholar.google.com/citations?user=T1w7OIQAAAAJ",
     linkedin: "https://www.linkedin.com/in/karlni/",
     neu: "https://www.khoury.northeastern.edu/people/karl-ni/",
-    // Local image path
-    image: "https://siliconvalley.northeastern.edu/wp-content/uploads/2024/10/Karl-Ni.jpg"
+    // Local image path (Vite will hash this)
+    image: "images/karl_prof.jpg"
   },
   tagline: "A mix of first principles with heavy doses of software engineering in the project setting. Build and serve modern NLP applications leveraging ML, statistics, LLMs, and agents.",
   quote: "\"Language is the infinite use of finite means.\"\n  — Wilhelm von Humboldt",
