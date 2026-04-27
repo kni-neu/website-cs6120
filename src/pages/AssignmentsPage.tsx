@@ -5,6 +5,7 @@ import { courseData } from "../constants";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { FileText, FlaskConical, Rocket, ArrowRight, Calendar } from "lucide-react";
+import { resolveAssetPath } from "../utils/resolveAssetPath";
 
 export default function AssignmentsPage() {
   const homeworks = courseData.schedule.filter(item => 
@@ -75,9 +76,9 @@ export default function AssignmentsPage() {
                       {hw.homework}
                     </h3>
                     {(hw as any).homeworkLink ? (
-                      (hw as any).homeworkLink.startsWith('http') ? (
+                      (hw as any).homeworkLink.startsWith('http') || (hw as any).homeworkLink.endsWith('.pdf') ? (
                         <a 
-                          href={(hw as any).homeworkLink} 
+                          href={(hw as any).homeworkLink.startsWith('http') ? (hw as any).homeworkLink : resolveAssetPath((hw as any).homeworkLink)} 
                           target="_blank"
                           rel="noreferrer"
                           className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-brand-red hover:translate-x-1 transition-transform"
@@ -124,9 +125,9 @@ export default function AssignmentsPage() {
                       {lab.title}
                     </h3>
                     {lab.link ? (
-                      lab.link.startsWith('http') ? (
+                      lab.link.startsWith('http') || lab.link.endsWith('.pdf') ? (
                         <a 
-                           href={lab.link} 
+                           href={lab.link.startsWith('http') ? lab.link : resolveAssetPath(lab.link)} 
                            target="_blank"
                            rel="noreferrer"
                            className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-brand-red hover:translate-x-1 transition-transform"
@@ -179,8 +180,13 @@ export default function AssignmentsPage() {
                           <Calendar className="w-3 h-3 text-brand-red" />
                           <span>DUE {project.deadline}</span>
                        </div>
-                       {project.link.startsWith('http') ? (
-                         <a href={project.link} target="_blank" rel="noreferrer" className="ml-auto text-xs font-black uppercase tracking-widest hover:text-brand-red transition-colors underline underline-offset-4 decoration-brand-red">
+                       {project.link.startsWith('http') || project.link.endsWith('.pdf') ? (
+                         <a 
+                            href={project.link.startsWith('http') ? project.link : resolveAssetPath(project.link)} 
+                            target="_blank" 
+                            rel="noreferrer" 
+                            className="ml-auto text-xs font-black uppercase tracking-widest hover:text-brand-red transition-colors underline underline-offset-4 decoration-brand-red"
+                          >
                            SUBMISSION DETAILS
                          </a>
                        ) : (
