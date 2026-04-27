@@ -1,6 +1,7 @@
 // This file uses Vite's glob import to automatically pick up all assets
 // in the pdfs and images directories. This ensures they are processed by
 // Vite and included in the production build with content-based hashes.
+// This is a touch edit to trigger git sync.
 
 // @ts-ignore
 const pdfs = import.meta.glob('./pdfs/*.pdf', { eager: true, as: 'url' });
