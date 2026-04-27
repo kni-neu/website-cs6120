@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <title>CS 6120: Natural Language Processing</title>
+    <script type="module" crossorigin src="./assets/index-ZDgT5kuB.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CxDuc_NK.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+        // Simple watcher to detect if the app fails to mount
+        setTimeout(function() {
+            var root = document.getElementById('root');
+            if (root && root.innerHTML === "") {
+                root.innerHTML = '<div style="padding: 2.5rem; font-family: system-ui; max-width: 600px; margin: 2rem auto; border: 1px solid #fee2e2; background: #fef2f2; color: #991b1b; border-radius: 8px;">' +
+                    '<h3 style="margin-top:0">Development Notice: Assets Not Loading</h3>' +
+                    '<p>The React application failed to mount after 3 seconds. This usually happens when hosted in a subdirectory (like <code>/cs6120f26/</code>) and the browser cannot find the JavaScript bundles.</p>' +
+                    '<p style="font-size: 0.875rem; margin-bottom:0"><b>Debug Step:</b> Check the "Console" and "Network" tabs in your browser\'s Developer Tools (F12).</p>' +
+                    '</div>';
+            }
+        }, 3000);
+
+        window.onerror = function(msg, url, line) {
+            var root = document.getElementById('root');
+            if (root) {
+                root.innerHTML = '<div style="padding: 2.5rem; font-family: system-ui; border: 1px solid #fee2e2; background: #fef2f2; color: #991b1b; border-radius: 8px;">' +
+                    '<h3 style="margin-top:0">Runtime Error</h3>' +
+                    '<p>' + msg + '</p>' +
+                    '<p style="font-size: 0.75rem">at ' + url + ' (line ' + line + ')</p>' +
+                    '</div>';
+            }
+            return false;
+        };
+    </script>
+  </body>
+</html>
+
