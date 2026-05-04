@@ -23,8 +23,7 @@ export const courseData = {
     scholar: "https://scholar.google.com/citations?user=T1w7OIQAAAAJ",
     linkedin: "https://www.linkedin.com/in/karlni/",
     neu: "https://www.khoury.northeastern.edu/people/karl-ni/",
-    // Local image path (Vite will hash this)
-    image: "/images/karl_prof.jpg"
+    image: "https://siliconvalley.northeastern.edu/wp-content/uploads/2024/10/Karl-Ni.jpg",
   },
   tagline: "A mix of first principles with heavy doses of software engineering in the project setting. Build and serve modern NLP applications leveraging ML, statistics, LLMs, and agents.",
   quote: "\"Language is the infinite use of finite means.\"\n  — Wilhelm von Humboldt",
@@ -32,29 +31,29 @@ export const courseData = {
   coreTopics: ["Topic Models", "Word/Sentence Embedding Models", "Deep Attention Models", "Large Language Models (LLMs)"],
   staff: [
     {
-       name: "Sherwin Vahidimowlavi",
+       name: "TBD - Awaiting Applications",
        slug: "sherwin-vahidimowlavi",
        role: "Head Teaching Assistant",
        officeHours: "Wed 12-2pm, 10th Floor / Zoom",
-       image: "https://media.licdn.com/dms/image/v2/C4E03AQHMKyVfrlj-HQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516537039088?e=1778716800&v=beta&t=OM0E6eTO-0_7sogryKt5VZwYXLVsu4lzh-f0FAPPm0I",
+       image: "/images/fake-image-1.png",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
     {
-       name: "Yue Liang",
+       name: "TBD - Awaiting Applications",
        slug: "yue-liang",
        role: "Teaching Assistant",
        officeHours: "Tue 3-5pm, 10th Floor",
-       image: "https://media.licdn.com/dms/image/v2/D4E03AQF1ASVp312eiQ/profile-displayphoto-crop_800_800/B4EZqP4SxQIwAI-/0/1763350490959?e=1778716800&v=beta&t=FFVHKuOjgegEWkuulY_FzdbWD9jIa88C3SHOVFjJob0",
+       image: "/images/fake-image-2.png",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
     {
-       name: "Yu-Chang Shih",
+       name: "TBD - Awaiting Applications",
        slug: "yu-chang-shih",
        role: "Teaching Assistant",
        officeHours: "Fri 1-3pm, 10th Floor / Zoom",
-       image: "https://media.licdn.com/dms/image/v2/C4D03AQG5dqU4C51Ucg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1649728546165?e=2147483647&v=beta&t=cuXobBQV5JOielSga19QrMX5ig1dyEgyu32ASzcTfe4",
+       image: "/images/fake-image-3.png",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
