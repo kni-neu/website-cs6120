@@ -35,7 +35,7 @@ export const courseData = {
        slug: "sherwin-vahidimowlavi",
        role: "Head Teaching Assistant",
        officeHours: "Wed 12-2pm, 10th Floor / Zoom",
-       image: "https://i.guim.co.uk/img/media/b1c1caa029d6f186f9d6b3fabb7f02517eb9c33b/0_58_2528_1519/master/2528.jpg",
+       image: "/images/fake-image-3.png",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
