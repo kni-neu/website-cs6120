@@ -53,7 +53,7 @@ export const courseData = {
        slug: "yu-chang-shih",
        role: "Teaching Assistant",
        officeHours: "Fri 1-3pm, 10th Floor / Zoom",
-       image: "/images/fake-image-3.png",
+       image: "/images/fake-image-4.png",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
