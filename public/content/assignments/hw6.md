@@ -14,7 +14,7 @@ Named entity recognition is the process of identifying and classifying entities 
 ## data and starter kit
 -----
 
-* The code template for homework 6 is located [here]({{ site.baseurl }}//assets/python/assignment6.py). Please fill out where you see `# <YOUR-CODE-HERE>`. There will be `None` values for those lines that require attention.
+* The code template for homework 6 is located [here](/python/assignment6.py). Please fill out where you see `# <YOUR-CODE-HERE>`. There will be `None` values for those lines that require attention.
 
 * The dataset has several different sizes for prototyping, evaluation, and training, and can be found [here](https://course.ccs.neu.edu/cs6120s26/data/named-entities). If you're on a GCP VM, you can download with the bash command `wget`. If you wish to download inside of a notebook, you can type in a shell commnad with a `!`.
 
@@ -24,7 +24,7 @@ Named entity recognition is the process of identifying and classifying entities 
 from load_data import load_data
 ```
 
-* The python code you will need to modify and turn in is located [here]({{ site.baseurl }}/assets/python/assignment6.py). There are several functions that you will be modifying. They will be of the form
+* The python code you will need to modify and turn in is located [here](/python/assignment6.py). There are several functions that you will be modifying. They will be of the form
 
 ```python
 def some_function(argument):

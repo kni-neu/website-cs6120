@@ -14,9 +14,9 @@ Language models provide the capability to predict the most likely set of texts t
 ## data and starter kit
 -----
 
-You will need [the data](/cs6120f26/data/twitter/): the [`en_US.twitter.txt`](/cs6120s26/data/twitter/en_US.twitter.txt) file and [the code](/code/assignment4.py). You can read more about this data [here](https://github.com/bquast/Data-Science-Capstone/blob/master/Online-Text-Exploration.md).
+You will need [the data](/cs6120f26/data/twitter/): the [`en_US.twitter.txt`](/cs6120s26/data/twitter/en_US.twitter.txt) file and [the code](/python/assignment4.py). You can read more about this data [here](https://github.com/bquast/Data-Science-Capstone/blob/master/Online-Text-Exploration.md).
 
-You will be filling out the portions in [the code](/cs6120f26/code/assignment4.py) that say `<YOUR-CODE-HERE>`. There is also helpful unit test code with the suffix `_test()`. For example, 
+You will be filling out the portions in [the code](/python/assignment4.py) that say `<YOUR-CODE-HERE>`. There is also helpful unit test code with the suffix `_test()`. For example, 
 
 ```python
 def estimate_probabilities():

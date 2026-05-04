@@ -17,7 +17,7 @@ Review the homework in this [pdf file](pdfs/assignment-5.pdf). Remember that rea
 ## data and starter kit
 -----
 
-Your code template is available [here](/cs6120f26/code/assignment5.py). We will be using 
+Your code template is available [here](/python/assignment5.py). We will be using 
 data from [ArXiv](http://arxiv.org) today, containing the titles of over 3M academic and 
 scientific papers. Per usual, you can find the datasets via the 
 [course data site](/cs6120f26/data/), where the dataset you can download is in the arxiv 
