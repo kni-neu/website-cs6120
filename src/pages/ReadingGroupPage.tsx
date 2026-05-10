@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import { MarkdownSection } from "../components/MarkdownSection";
 import { courseData } from "../constants";
 import { Users, ExternalLink, Info } from "lucide-react";
 
@@ -35,10 +36,9 @@ export default function ReadingGroupPage() {
               <h2 className="text-3xl font-black tracking-tighter leading-none">
                 Presenter Sign-up
               </h2>
-              <p className="text-gray-400 max-w-xl text-sm leading-relaxed">
-                Presentation slots are associated with weekly topics. Please ensure your chosen paper 
-                aligns with the week's theme or consult with the instructors for approval of alternative papers.
-              </p>
+              <div className="text-gray-400 max-w-xl text-sm leading-relaxed prose prose-invert max-w-none">
+                <MarkdownSection contentPath="/content/reading-group.md" />
+              </div>
             </div>
             <a 
               href={courseData.readingGroupSheet.replace('pubhtml?widget=true&amp;headers=false', 'edit')} 
@@ -58,6 +58,11 @@ export default function ReadingGroupPage() {
               className="w-full h-[800px] border-none"
               title="Reading Group Sign-up Spreadsheet"
             />
+          </div>
+
+          {/* Additional Information */}
+          <div className="bg-white neo-brutalism p-8">
+            <MarkdownSection contentPath="/content/reading-group-info.md" />
           </div>
 
           {/* Fallback/Note */}
