@@ -21,11 +21,12 @@ While we will primarily use modern research papers and online resources, the fol
 
 ## Grading Policies
 Grading is based on a mix of individual and group efforts across projects and participation:
-- **Participation:** 10%
-- **Labs:** 10%
-- **Assignments:** 20%
-- **Reading Groups:** 20%
-- **Final Group Projects:** 20%
+- **Participation** 10%
+- **Labs** 10%
+- **Reading Groups** 10%
+- **Final Project** 10%
+- **Assignments** 20%
+- **Midterm Exam** 20%
 - **Final Exam** 20%
 
 Labs must be turned in by the following lecture. Late assignments will have 3 point deductions each weekday until the following lecture. You must notify instructional staff (via e-mail) ahead of any absences.
