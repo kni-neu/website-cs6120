@@ -1,13 +1,6 @@
-# Additional Information
+# Beyond the Reading Group
 
-## Presentation Format
-- Presentations should be 20-25 minutes long
-- Include time for Q&A (5-10 minutes)
-- Focus on key insights and implications for NLP
+## Suggested Textbook
 
-## Resources
-- [Paper Reading Tips](https://example.com)
-- [Presentation Guidelines](https://example.com)
+[Speech and Language Processing (3rd ed. draft)](https://web.stanford.edu/~jurafsky/slp3/) by Dan Jurafsky and James H. Martin.
 
-## Contact
-Questions? Email the instructors at instructors@course.edu

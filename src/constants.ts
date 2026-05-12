@@ -78,6 +78,7 @@ export const courseData = {
     }
   ],
   readingGroupSheet: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRUm-_bbk-UPXGobK-eGsSuEN0CcTUBCJ6HSg_T6av24sMT2Wbz7Tl8U9Jr1cyNkP2IWeg8xoLeNCQP/pubhtml?widget=true&amp;headers=false",
+  readingGroupSheetDirect: "https://docs.google.com/spreadsheets/d/16UzbPkleajr5yHGeqTyXksXyUPIyQEum2jZKbhIM2U4",
   schedule: scheduleData,
   projects: [
     {

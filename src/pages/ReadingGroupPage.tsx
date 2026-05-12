@@ -41,7 +41,7 @@ export default function ReadingGroupPage() {
               </div>
             </div>
             <a 
-              href={courseData.readingGroupSheet.replace('pubhtml?widget=true&amp;headers=false', 'edit')} 
+              href={courseData.readingGroupSheetDirect} 
               target="_blank" 
               rel="noreferrer"
               className="bg-white text-black px-8 py-4 font-black uppercase tracking-tighter hover:bg-brand-red hover:text-white transition-all neo-brutalism"
