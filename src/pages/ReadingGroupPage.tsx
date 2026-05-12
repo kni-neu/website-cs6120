@@ -51,11 +51,11 @@ export default function ReadingGroupPage() {
           </div>
 
           {/* Spreadsheet Embed */}
-          <div className="bg-white neo-brutalism overflow-hidden border-2 border-black min-h-[800px] relative">
+          <div className="bg-white neo-brutalism overflow-hidden border-2 border-black min-h-[534px] relative">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/notebook.png')] opacity-10 pointer-events-none"></div>
             <iframe 
               src={courseData.readingGroupSheet}
-              className="w-full h-[800px] border-none"
+              className="w-full h-[534px] border-none"
               title="Reading Group Sign-up Spreadsheet"
             />
           </div>
