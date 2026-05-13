@@ -2,8 +2,6 @@
 
 For each of the papers, students will create a video five minute video pitch, write a 1 page summary, and answer student questions about the paper during class. The deliveries are as follows.
 
----
-
 1. **Video Presentation** (5 min, maximum) - The video presentation will need to be concise, to the point, and isolate the most important aspects of the work. It is a TL;DR elevator pitch as if you had a short amount of time to get your ideas across to an executive or your manager before they go into a leadership review. For this, you will need to:
 
 	* **Overview** the seminal work in short and concise ways. This includes the problems we face and a specific approach to remedy them.
@@ -15,10 +13,6 @@ For each of the papers, students will create a video five minute video pitch, wr
 	There are maximum four people per week. Feel free to organize ahead of time.
 
 2. **TL;DR Report** (Est 1 page, but 2pg max) Write a concise one page report that summarizes your video presentation in a clear and concise manner. Feel free to use the LaTeX templates below.
-
-3. **Questions/Answers**: Be prepared to ask questions from the audience, TA's, and instructor (5min).
-
----
 
 <br>
 
