@@ -54,7 +54,8 @@ export const scheduleData = [
     application: "Sentiment Analysis",
     readingGroup: "Agentic Learning without Data",
     readingGroupLink: "https://arxiv.org/abs/2511.16043",
-    reading: "Jurafsky & Martin Ch. 6",
+    reading: "Jurafsky & Martin Ch. 4",
+    readingLink: "https://web.stanford.edu/~jurafsky/slp3/4.pdf",
     lab: "Laboratory - Naïve Bayes",
     labLink: "https://colab.research.google.com/drive/14wNBIyAOMTyh5Hnuv8tOBXdyV39H0QYW#",
   },
@@ -100,6 +101,8 @@ export const scheduleData = [
     application: "Autocompleting words and sentences",
     readingGroup: "Topic Modeling with Latent Dirichlet Allocation",
     readingGroupLink: "https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf",
+    reading: "Jurafsky & Martin Ch. 3",
+    readingLink: "https://web.stanford.edu/~jurafsky/slp3/3.pdf",
     labs: [
       {
         title: "Data Processing for N-Grams",
