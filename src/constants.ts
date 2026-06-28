@@ -33,17 +33,17 @@ export const courseData = {
     {
        name: "Vineeth Sakhamuru",
        slug: "vineeth-sakhamuru",
-       role: "Head Teaching Assistant",
+       role: "Teaching Assistant",
        officeHours: "TBD",
        image: "/images/vineeth.jpeg",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
     {
-       name: "TBD - Awaiting Applications",
-       slug: "yue-liang",
+       name: "Zhengqi Hou",
+       slug: "zhengqi-hou",
        role: "Teaching Assistant",
-       officeHours: "Tue 3-5pm, 10th Floor",
+       officeHours: "TBD",
        image: "/images/fake-image-2.png",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
