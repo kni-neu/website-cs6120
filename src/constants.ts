@@ -9,7 +9,7 @@ export const courseData = {
   campus: "San Jose, CA",
   crn: "39412",
   time: "Mon 4:00-7:20pm",
-  location: "San Jose Room 902/903",
+  location: "San Jose Room 916",
   instructor: {
     name: "Karl Ni",
     slug: "karl-ni",
