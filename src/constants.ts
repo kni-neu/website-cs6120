@@ -47,27 +47,6 @@ export const courseData = {
        image: "/images/fake-image-2.png",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
-    },
-    {
-       name: "TBD - Awaiting Applications",
-       slug: "yu-chang-shih",
-       role: "Teaching Assistant",
-       officeHours: "Fri 1-3pm, 10th Floor / Zoom",
-       image: "/images/fake-image-4.png",
-       linkedin: "https://linkedin.com/",
-       github: "https://github.com/"
-    },
-    {
-       name: "Newton",
-       role: "Your Friendly Neighborhood Pup",
-       officeHours: "Treats and I'll come",
-       image: "https://course.ccs.neu.edu/cs6120s26/assets/img/newton.jpg"
-    },
-    {
-       name: "Rosie",
-       role: "A dog who loves NLP and naps",
-       officeHours: "Non-napping hours",
-       image: "https://course.ccs.neu.edu/cs6120s26/assets/img/rosie-cropped.jpg"
     }
   ],
   announcements: [
