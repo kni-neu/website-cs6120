@@ -31,11 +31,11 @@ export const courseData = {
   coreTopics: ["Topic Models", "Word/Sentence Embedding Models", "Deep Attention Models", "Large Language Models (LLMs)"],
   staff: [
     {
-       name: "TBD - Awaiting Applications",
-       slug: "sherwin-vahidimowlavi",
+       name: "Vineeth Sakhamuru",
+       slug: "vineeth-sakhamuru",
        role: "Head Teaching Assistant",
-       officeHours: "Wed 12-2pm, 10th Floor / Zoom",
-       image: "/images/fake-image-3.png",
+       officeHours: "TBD",
+       image: "/images/vineeth.jpeg",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     },
