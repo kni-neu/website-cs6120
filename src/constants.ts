@@ -44,7 +44,7 @@ export const courseData = {
        slug: "zhengqi-hou",
        role: "Teaching Assistant",
        officeHours: "TBD",
-       image: "/images/fake-image-2.png",
+       image: "https://media.licdn.com/dms/image/v2/D5603AQGG2x_GLt4rKA/profile-displayphoto-scale_200_200/B56Z1X54wtKMAY-/0/1775296287826?e=2147483647&v=beta&t=8WRfKxx2c2-XBSmskxn-h2a9Y_kSZKY3P1hr4VVpwSU",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
     }
