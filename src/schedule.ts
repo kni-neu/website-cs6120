@@ -135,8 +135,16 @@ export const scheduleData = [
     ],
     readingGroup: "Learning Text Similarity with Siamese RNNs",
     readingGroupLink: "https://arxiv.org/abs/2310.12321",
-    lab: "Laboratory - Word Embeddings with CBOW",
-    labLink: "https://colab.research.google.com/drive/1lknBFuNeVr7-AvQx4vKvCQfVkL_za65Z",
+    labs: [
+      {
+        title: "Laboratory - Word Embeddings with CBOW",
+        link: "https://colab.research.google.com/drive/1lknBFuNeVr7-AvQx4vKvCQfVkL_za65Z"
+      },
+      {
+        title: "Laboratory - Mikolov's Word2Vec (Optional)",
+        link: "pdfs/lab-7.pdf"
+      }
+    ],
     homework: "Assignment 5: Word Embeddings",
     homeworkLink: "/assignments/hw5",
   },

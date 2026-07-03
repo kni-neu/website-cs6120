@@ -1,6 +1,6 @@
 ### June 3, 2026
 **GCP and HCP access requested** 
-This semester, you will obtain access to Google Cloud Platform (GCP) with $50 of educatonal credit. You will need to use a *non*-university e-mail address. Please send a message to instructional staff if your code does not work.
+This semester, you will obtain access to Google Cloud Platform (GCP) with $50 of educational credit. You will need to use a *non*-university e-mail address. Please send a message to instructional staff if your code does not work.
 
 We have also gained access to Northeastern University's [Explore Cluster](https://rc.northeastern.edu/courses-on-explorer/), a high performance computing (HPC) system that will have immediate and dedicated access to GPUs. Please make your own folders on:
 
@@ -9,7 +9,7 @@ We have also gained access to Northeastern University's [Explore Cluster](https:
 
 ### June 28, 2026
 **TA applications are closed**
-Selections have been made for all rated teaching assistants. This semester, we have allocation for two TA's. Congratulations to [Vineet Sakhamuru](/#/personnel/vineeth-sakhamuru) and [Zhengqi Huo](/#/personnel/zhengqi-hou); I couldn't ask for better staff to support the student community.
+Selections have been made for all rated teaching assistants. This semester, we have allocation for two TA's. Congratulations to [Vineet Sakhamuru](/#/personnel/vineeth-sakhamuru) and [Zhengqi Huo](/#/personnel/zhengqi-hou); I couldn't ask for better staff to support the student community. As the class size is large (currently at 55 capacity), additional TA support will be requested.
 
 ### August 10, 2026
 **Welcome to CS 6120!** 
