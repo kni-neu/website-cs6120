@@ -72,7 +72,7 @@ export function MarkdownSection({ contentPath, className }: MarkdownSectionProps
           },
           a({ href, children, ...props }) {
             const isExternal = href?.startsWith('http');
-            const isAsset = href?.endsWith('.pdf') || href?.includes('/pdfs/') || href?.includes('/images/');
+            const isAsset = href?.endsWith('.pdf') || href?.endsWith('.py') || href?.endsWith('.ipynb') || href?.includes('/pdfs/') || href?.includes('/images/') || href?.includes('/python/');
             const resolvedHref = (isAsset && href) ? resolveAssetPath(href) : href;
             
             return (

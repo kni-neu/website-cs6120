@@ -5,7 +5,7 @@ In this homework, we will implement a functional and practical autocorrection an
 
 <center>
 <img 
-  src="https://course.ccs.neu.edu/cs6120s26/assets/img/misspelled.png"
+  src="https://course.ccs.neu.edu/cs6120f26/assets/img/misspelled.png"
   width="500" height="auto">
 </center>
 <br>
