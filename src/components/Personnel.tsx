@@ -19,13 +19,13 @@ export function Personnel() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+        <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
           {/* Instructor Card */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="flex"
+            className="flex w-[210px] max-w-full"
           >
             <Card className="flex flex-col w-full rounded-none border-2 border-black overflow-hidden group">
               <Link to={`/personnel/${courseData.instructor.slug}`} className="block aspect-[4/5] bg-gray-100 relative overflow-hidden">
@@ -66,7 +66,7 @@ export function Personnel() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: (index + 1) * 0.05 }}
-              className="flex"
+              className="flex w-[210px] max-w-full"
             >
               <Card className="flex flex-col w-full rounded-none border border-gray-100 hover:border-black/20 transition-all overflow-hidden group">
                 <Link to={`/personnel/${(person as any).slug}`} className="block aspect-[4/5] bg-gray-50 relative overflow-hidden">
