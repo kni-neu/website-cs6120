@@ -1,11 +1,11 @@
 # Homework 6: Evaluating classifier performance
 -----
 
-Named entity recognition is the process of identifying and classifying entities in unstructured text. Review the homework in this [pdf file](pdfs/assignment-6.pdf). We will be borrowing the codebase from [DeepLearning.AI](http://deeplearning.ai). Remember that reading resources can be found in the [syllabus]({{ site.baseurl }}/syllabus).
+Named entity recognition is the process of identifying and classifying entities in unstructured text. Review the homework in this [pdf file](pdfs/assignment-6.pdf). We will be borrowing the codebase from [DeepLearning.AI](http://deeplearning.ai). Remember that reading resources can be found in the [syllabus](#/#syllabus).
 
 <center>
 <img 
-  src="{{ site.baseurl }}/assets/img/ner-hw6.png"
+  src="https://course.ccs.neu.edu/cs6120f26/images/ner-hw6.png"
   width="750" height="auto">
 </center>
 <br>
