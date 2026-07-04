@@ -20,7 +20,7 @@ export default function SchedulePage() {
           </Link>
           
           <h1 className="text-6xl md:text-8xl font-serif font-black tracking-tighter mb-4">
-            The Detailed <span className="text-brand-red">Roadmap</span>
+            Detailed <span className="text-brand-red">Roadmap</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl leading-relaxed">
             A comprehensive breakdown of weekly topics, hands-on labs, engineering homeworks, and reading group discussions.
