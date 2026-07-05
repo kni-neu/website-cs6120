@@ -76,3 +76,31 @@ export const courseData = {
     }
   ]
 };
+
+// Assignment metadata derived from the schedule — the single source of truth.
+// `released` is the assignment's own week; `due` is the date the NEXT homework is
+// released (this naturally makes the last assignment due on the Project Proposal
+// date). PDFs follow the hwN -> assignment-N.pdf naming convention.
+export interface AssignmentMeta {
+  released: string;
+  due: string | null;
+  pdf?: string;
+}
+
+const homeworkWeeks = scheduleData.filter(
+  (w: any) => w.homework && w.homeworkLink
+) as any[];
+
+export const assignmentMeta: Record<string, AssignmentMeta> = Object.fromEntries(
+  homeworkWeeks.map((w: any, i: number) => {
+    const id: string = w.homeworkLink.split("/").pop();
+    return [
+      id,
+      {
+        released: w.date,
+        due: homeworkWeeks[i + 1]?.date ?? null,
+        pdf: /^hw\d+$/.test(id) ? `pdfs/assignment-${id.slice(2)}.pdf` : undefined,
+      },
+    ];
+  })
+);

@@ -6,22 +6,11 @@ import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, FileText, Calendar, Clock, Download } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { resolveAssetPath } from "../utils/resolveAssetPath";
-
-// Per-assignment released/due dates (all Mondays) and handout PDFs.
-// Due date = the day the *next* assignment is released; hw7 is due the following Monday.
-const ASSIGNMENT_META: Record<string, { released: string; due: string; pdf: string }> = {
-  hw1: { released: "September 14", due: "September 21", pdf: "pdfs/assignment-1.pdf" },
-  hw2: { released: "September 21", due: "October 5", pdf: "pdfs/assignment-2.pdf" },
-  hw3: { released: "October 5", due: "October 19", pdf: "pdfs/assignment-3.pdf" },
-  hw4: { released: "October 19", due: "October 26", pdf: "pdfs/assignment-4.pdf" },
-  hw5: { released: "October 26", due: "November 2", pdf: "pdfs/assignment-5.pdf" },
-  hw6: { released: "November 2", due: "November 9", pdf: "pdfs/assignment-6.pdf" },
-  hw7: { released: "November 9", due: "November 16", pdf: "pdfs/assignment-7.pdf" },
-};
+import { assignmentMeta } from "../constants";
 
 export default function AssignmentPage() {
   const { id } = useParams();
-  const meta = id ? ASSIGNMENT_META[id] : undefined;
+  const meta = id ? assignmentMeta[id] : undefined;
 
   return (
     <div className="min-h-screen bg-brand-white">
@@ -50,14 +39,14 @@ export default function AssignmentPage() {
             <div className="flex items-center gap-2 text-sm">
               <Calendar className="w-4 h-4 text-brand-red" />
               <span className="font-bold">Released:</span>
-              <span className="text-gray-500">{meta ? meta.released : "See Schedule"}</span>
+              <span className="text-gray-500">{meta?.released ?? "See Schedule"}</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
               <Clock className="w-4 h-4 text-brand-red" />
               <span className="font-bold">Due:</span>
-              <span className="text-gray-500">{meta ? `${meta.due} @ 11:59 PM` : "See Schedule"}</span>
+              <span className="text-gray-500">{meta?.due ? `${meta.due} @ 11:59 PM` : "See Schedule"}</span>
             </div>
-            {meta && (
+            {meta?.pdf && (
               <a
                 href={resolveAssetPath(meta.pdf)}
                 target="_blank"
