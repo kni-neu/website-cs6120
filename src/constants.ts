@@ -101,7 +101,11 @@ export const assignmentMeta: Record<string, AssignmentMeta> = Object.fromEntries
     // semester and discussed throughout, so their schedule `date` is the DUE
     // date, not a release date.
     if (w.homeworkLink.includes("project")) {
-      return [id, { released: scheduleData[0].date, due: w.date }];
+      const projectPdf: Record<string, string> = {
+        "project-proposal": "pdfs/project-proposal.pdf",
+        "final-project": "pdfs/project-description.pdf",
+      };
+      return [id, { released: scheduleData[0].date, due: w.date, pdf: projectPdf[id] }];
     }
 
     // Regular homework: released on its own week, due when the next graded item
