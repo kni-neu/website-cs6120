@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { courseData } from "../constants";
-import { ArrowLeft, BookOpen, FlaskConical, PenTool, Users } from "lucide-react";
+import { ArrowLeft, BookOpen, FlaskConical, PenTool, Users, Rocket } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { resolveAssetPath } from "../utils/resolveAssetPath";
@@ -30,6 +30,8 @@ export default function SchedulePage() {
         <div className="grid grid-cols-1 gap-12">
           {courseData.schedule.map((weekItem: any, idx) => {
             const week = weekItem; // Use a more flexible type for iteration
+            // Projects are DUE on their schedule date; homeworks are RELEASED on theirs.
+            const isProject = !!week.homeworkLink && week.homeworkLink.includes("project");
             return (
               <motion.div 
                 key={week.week + (week.date || idx)}
@@ -161,9 +163,13 @@ export default function SchedulePage() {
 
                         {week.homework && (
                           <div className="flex gap-3">
-                            <PenTool className="w-5 h-5 text-brand-red shrink-0 mt-1" />
+                            {isProject ? (
+                              <Rocket className="w-5 h-5 text-brand-red shrink-0 mt-1" />
+                            ) : (
+                              <PenTool className="w-5 h-5 text-brand-red shrink-0 mt-1" />
+                            )}
                             <div>
-                              <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-1">Homework</span>
+                              <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-1">{isProject ? "Project (Due)" : "Homework"}</span>
                               {week.homeworkLink ? (
                                 week.homeworkLink.startsWith('http') || week.homeworkLink.endsWith('.pdf') ? (
                                   <a 
