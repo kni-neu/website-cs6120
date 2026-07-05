@@ -137,7 +137,7 @@ export default function SchedulePage() {
                             <div key={lIdx} className="flex gap-3">
                               <FlaskConical className="w-5 h-5 text-brand-red shrink-0 mt-1" />
                               <div>
-                                <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-1">Laboratory</span>
+                                <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-1">Laboratory Assigned</span>
                                 {labItem.link ? (
                                   labItem.link.startsWith('http') ? (
                                     <a href={labItem.link} target="_blank" rel="noreferrer" className="text-sm font-bold text-brand-red hover:underline decoration-2 underline-offset-4 decoration-current transition-all leading-tight block">
@@ -169,7 +169,7 @@ export default function SchedulePage() {
                               <PenTool className="w-5 h-5 text-brand-red shrink-0 mt-1" />
                             )}
                             <div>
-                              <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-1">{isProject ? "Project (Due)" : "Homework"}</span>
+                              <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-1">{isProject ? "Project (Due)" : "Homework Assigned"}</span>
                               {week.homeworkLink ? (
                                 week.homeworkLink.startsWith('http') || week.homeworkLink.endsWith('.pdf') ? (
                                   <a 
