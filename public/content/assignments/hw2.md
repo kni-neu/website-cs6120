@@ -27,7 +27,7 @@ Guidelines for development:
 - **Do not** use deep learning or auto-differentiation libraries (e.g., TensorFlow, PyTorch, Keras, JAX).  
 - You may use either [LaTeX](https://www.overleaf.com/read/gbwryydmdjhv) or [Google Docs](https://docs.google.com/document/d/1Q8fpJo-gF_L0_TwUdw5E7x7faOAStK4n) templates for your writeup.
 
-Submit via [Gradescope](https://www.gradescope.com) before 5pm PT, Monday, XXXXXX. Your artifacts will include:
+Submit via [Gradescope](https://www.gradescope.com) before 11:59pm PT, Monday, October 5. Your artifacts will include:
 
 * Compiled (or exported) PDF into a file called `assignment2.pdf`
 * Data and parameters into a Python pickle file called `assignment2.pkl`
