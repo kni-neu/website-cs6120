@@ -87,18 +87,30 @@ export interface AssignmentMeta {
   pdf?: string;
 }
 
-const homeworkWeeks = scheduleData.filter(
+// Weeks that assign or collect graded work, in schedule order. Projects stay in
+// this list so a regular homework's due date can still point at the next item.
+const gradedWeeks = scheduleData.filter(
   (w: any) => w.homework && w.homeworkLink
 ) as any[];
 
 export const assignmentMeta: Record<string, AssignmentMeta> = Object.fromEntries(
-  homeworkWeeks.map((w: any, i: number) => {
+  gradedWeeks.map((w: any, i: number) => {
     const id: string = w.homeworkLink.split("/").pop();
+
+    // Projects (proposal, final report) are introduced at the start of the
+    // semester and discussed throughout, so their schedule `date` is the DUE
+    // date, not a release date.
+    if (w.homeworkLink.includes("project")) {
+      return [id, { released: scheduleData[0].date, due: w.date }];
+    }
+
+    // Regular homework: released on its own week, due when the next graded item
+    // is released (this makes the last homework due on the proposal's date).
     return [
       id,
       {
         released: w.date,
-        due: homeworkWeeks[i + 1]?.date ?? null,
+        due: gradedWeeks[i + 1]?.date ?? null,
         pdf: /^hw\d+$/.test(id) ? `pdfs/assignment-${id.slice(2)}.pdf` : undefined,
       },
     ];
