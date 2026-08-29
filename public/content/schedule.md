@@ -13,4 +13,4 @@
 | 10 | Nov 23 | Leveraging LLMs: RAG & RLHF | — |
 | 11 | Nov 30 | Agentic Workflows | — |
 | 12 | Dec 07 | Demos & Poster Session | [Final Report](#/assignments/final-project) |
-| -- | Dec 13 | **Final Exam** | — |
+| -- | Dec 14 | **Final Exam** | — |

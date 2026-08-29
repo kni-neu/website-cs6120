@@ -273,7 +273,7 @@ export const scheduleData = [
   },
   { 
     week: 13, 
-    date: "December 13",
+    date: "December 14",
     topic: "Final Exam", 
   }
 ];
