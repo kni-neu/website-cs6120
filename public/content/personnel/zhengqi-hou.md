@@ -1,11 +1,11 @@
 # Zhengqi Hou
 
-Zhengqi Houis a Teaching Assistant for CS 6120.
+I'm a TA for CS 6120 this semester, and an MS student in Artificial Intelligence at Northeastern.
 
-## Bio
+My [LinkedIn](https://www.linkedin.com/in/fr3dh/) has a fuller picture of what I've worked on. Outside of class, I play badminton, Go, and classical guitar.
 
-Zhengqi is a graduate student at Northeastern University with a strong interest in Natural Language Processing and its applications in real-world scenarios.
+<div className="mt-8 mb-8">
+  <img src="/images/AlphaGo.jpg" alt="Go" className="w-full h-auto neo-brutalism border-4 border-black object-contain" />
+</div>
 
-## Responsibilities
-
-As a member of the TA team, Zhengqi helps coordinate labs and assignments and serves as a point of contact for administrative questions and technical support on the course materials.
+Come to <a href="https://teams.microsoft.com/meet/254020110120849?p=c0OGY2TlOUIzkpPBwP">office hours</a> if you want help with assignments, or project ideas.

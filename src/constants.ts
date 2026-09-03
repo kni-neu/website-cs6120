@@ -42,11 +42,13 @@ export const courseData = {
     {
        name: "Zhengqi Hou",
        slug: "zhengqi-hou",
+       email: "hou.zhengq@northeastern.edu",
        role: "Teaching Assistant",
-       officeHours: "TBD",
-       image: "https://media.licdn.com/dms/image/v2/D5603AQGG2x_GLt4rKA/profile-displayphoto-scale_200_200/B56Z1X54wtKMAY-/0/1775296287826?e=2147483647&v=beta&t=8WRfKxx2c2-XBSmskxn-h2a9Y_kSZKY3P1hr4VVpwSU",
-       linkedin: "https://linkedin.com/",
-       github: "https://github.com/"
+       officeHours: "Wed 12:30-2:30pm, Teams",
+       officeHoursLink: "https://teams.microsoft.com/meet/254020110120849?p=c0OGY2TlOUIzkpPBwP",
+       image: "/images/zhengqi.jpg",
+       linkedin: "https://www.linkedin.com/in/fr3dh/",
+       github: "https://github.com/fr3dh"
     }
   ],
   announcements: [
