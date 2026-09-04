@@ -13,7 +13,7 @@ Welcome to CS6120! It's nice to meet you. You can find my academic and commerica
     </div>
     <div className="neo-brutalism overflow-hidden">
       <a href="https://karllab41.github.io/interests/1_interests/">
-        <img src="https://www.cmuse.org/wp-content/uploads/2018/09/famous-ragtime-piano-music.jpg" alt="ragtime piano" className="w-full aspect-square object-cover" />
+        <img src="/images/ragtime-piano.jpg" alt="ragtime piano" className="w-full aspect-square object-cover" />
       </a>
     </div>
 </div>
