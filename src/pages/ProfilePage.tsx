@@ -92,7 +92,13 @@ export default function ProfilePage() {
 
                 <div className="p-6 bg-brand-red/5 border-2 border-brand-red/20 neo-brutalism">
                   <span className="text-[10px] font-black uppercase tracking-widest text-brand-red block mb-2">Primary Contact Hours</span>
-                  <p className="text-sm font-bold">{person.officeHours}</p>
+                  {person.officeHoursLink ? (
+                    <a href={person.officeHoursLink} target="_blank" rel="noreferrer" className="text-sm font-bold hover:text-brand-red transition-colors decoration-brand-red/30 underline decoration-dotted">
+                      {person.officeHours}
+                    </a>
+                  ) : (
+                    <p className="text-sm font-bold">{person.officeHours}</p>
+                  )}
                 </div>
               </div>
             </div>

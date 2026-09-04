@@ -84,9 +84,21 @@ export function Personnel() {
                   <p className="text-gray-400 text-[9px] mb-4 font-serif italic truncate">{person.role}</p>
                   
                   <div className="space-y-2 mt-auto pt-4 border-t border-black/5 text-[10px]">
+                    {"email" in person && person.email && (
+                      <div className="flex items-center gap-2">
+                        <Mail className="w-3 h-3 text-brand-red shrink-0" />
+                        <span className="truncate">{person.email}</span>
+                      </div>
+                    )}
                     <div className="flex items-center gap-2">
                       <div className="w-4 h-4 bg-brand-red flex items-center justify-center text-[7px] text-white font-black rounded-none shrink-0">OH</div>
-                      <span className="font-bold truncate">{person.officeHours}</span>
+                      {"officeHoursLink" in person && person.officeHoursLink ? (
+                        <a href={person.officeHoursLink} target="_blank" rel="noreferrer" className="font-bold truncate hover:text-brand-red transition-colors decoration-brand-red/30 underline decoration-dotted">
+                          {person.officeHours}
+                        </a>
+                      ) : (
+                        <span className="font-bold truncate">{person.officeHours}</span>
+                      )}
                     </div>
                   </div>
                 </CardContent>
