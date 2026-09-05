@@ -3,8 +3,8 @@ export const scheduleData = [
     week: 1, 
     date: "September 14",
     topic: "Introduction and Applications", 
-    videoLink: "https://shorturl.at/R4s4W",
-    slidesLink: "https://docs.google.com/presentation/d/1Jg37kz_8CVGiEa4OMt6Dnb9F2giyUjQX",
+    videoLink: "https://youtube.com",
+    slidesLink: "https://docs.google.com/presentation/d/1i-LzFauPDsS27Tz3lkS4xU_EihfJ7ifU5rN5umSEJb4",
     description: "Language is the most efficient and compact way to transfer knowledge is through words, where the window to AGI is through NLP. This lecture is an introduction that takes us through history of how we got to LLMs. We'll also review some applications of NLP, current industry standards, and some of the most impactful approaches and where they are being implemented. Finally, we'll preview what we'll be learning, the logistics of how we'll be doing so, and the expectations for your participation in this class.",
     lecturingTopics: [
       "History of NLP: From Rules to Transformers",
@@ -23,8 +23,6 @@ export const scheduleData = [
     week: 2, 
     date: "September 21",
     topic: "ML Foundations and Software Engineering", 
-    videoLink: "https://northeastern-my.sharepoint.com/:v:/g/personal/k_ni_northeastern_edu/IQAcLFn30OWqRIaTcs6GspboAVh2pY9T25hkZF6yNnqYKUY?e=alhcFM",
-    slidesLink: "https://docs.google.com/presentation/d/12XMsenosJHJoC5VZOQrbmXq0pG7Ove0y",
     description: "As NLP is a specific branch of machine learning, we will review some foundational knowledge that we'll utilize through the course of this class. We'll look at both machine learning and software engineering best practices that will help you build and scale NLP systems later in the course. Because most NLP algorithms today rely heavily on computing resources, we'll dive into distributed compution approaches and cloud-based operations.",
     lecturingTopics: [
       "Foundations of Machine Learning",
@@ -42,8 +40,6 @@ export const scheduleData = [
     week: 3, 
     date: "September 28",
     topic: "Language Classification", 
-    videoLink: "https://shorturl.at/HlyOU",
-    slidesLink: "https://docs.google.com/presentation/d/13olQ4iYGLOgAbYSP-l1uxeypHMTfdKFL",
     description: "Building upon our review of machine learning, we discuss strategies in feature extraction and generation. Particularly as creating a vocabulary can explode required memory space, our featurization includes NLP-specific techniques (e.g., tokenization, lemmatization, etc.). This week also marks the first week of required reading of seminal papers that have revolutionized not only language processing but also machine learning and artificial intelligence writ large.",
     lecturingTopics: [
       "Building Vocabulary with Stopwords and Stemming",
@@ -63,8 +59,6 @@ export const scheduleData = [
     week: 4, 
     date: "October 5",
     topic: "Text Processing Algorithms", 
-    videoLink: "https://shorturl.at/jw3BX",
-    slidesLink: "https://docs.google.com/presentation/d/1NaaiOkdFXizWyrBv9lYZHUMPb3waDygW",
     description: "One of the most widely used algorithms in practice today are autocorrecting algorithms that typically have on-device requirements. In this lecture, we'll review elements of dynamic programming, particularly with respect to the minimum edit distance algorithm, and how we can apply these concepts to the autocorrect and subsequently the autocomplete problem.",
     lecturingTopics: [
       "Representations of Language",
@@ -89,8 +83,6 @@ export const scheduleData = [
     week: 5, 
     date: "October 19",
     topic: "Introduction to Language Modeling", 
-    videoLink: "https://shorturl.at/bP15B",
-    slidesLink: "https://docs.google.com/presentation/d/1Bil62cMryeAIHDX9CcWZqbakle6Or3b3",
     description: "Today we'll begin our journey to understanding LLMs by observing its origins. Dropping the 'Large' from the now-ubiquitous term 'Large Language Models', we take a look at the foundational principles that extract the relationships defining what it means to model language and how we might generate text.",
     lecturingTopics: [
       "N-Gram Models, Smoothing, and evaluation",
@@ -124,8 +116,6 @@ export const scheduleData = [
     week: 6, 
     date: "October 26",
     topic: "Word Modeling with Self-Supervision", 
-    videoLink: "https://shorturl.at/0X3RI",
-    slidesLink: "https://docs.google.com/presentation/d/1kesXmMT5rdxPMdeQ1EnKvcfwk8Z8vJez",
     description: "Perhaps the most influential paper to have come out of the natural language community is the word2vec paper. This week's lecture reviews word models (including word2vec as well as continuous bags of words) and the embeddings / representations that they create.",
     lecturingTopics: [
       "Embeddings with Continuous Bag of Words (CBOW)",
@@ -152,8 +142,6 @@ export const scheduleData = [
     week: 7, 
     date: "November 2",
     topic: "Introduction to Sequential Modeling", 
-    videoLink: "https://shorturl.at/QeAgL",
-    slidesLink: "https://docs.google.com/presentation/d/1NQn__1SQ_T1yYgFJhBxdCd1QzWsLsEbm",
     description: "Sequence relates to the order by which we see information. This week, we will learn about the modeling of sequences from Hidden Markov Models (HMMs) to Recurrent Neural Networks (RNNs) and memory gating mechanisms like LSTMs.",
     lecturingTopics: [
       "Hidden Markov Models (HMMs) & Viterbi Algorithm",
@@ -173,8 +161,6 @@ export const scheduleData = [
     week: 8, 
     date: "November 9",
     topic: "Attention and the Transformer Model", 
-    videoLink: "https://shorturl.at/2Zaj8",
-    slidesLink: "https://docs.google.com/presentation/d/1L2UfukJVr2f6Lf3A6v3OIaPp9upmjqdP",
     description: "Attention models have been the leap forward that are the fundamental building blocks to modern machine learning today, including the essential ingredients for Large Language Models. We'll go deep into attention layers in neural networks, building our own from scratch.",
     lecturingTopics: [
       "Introduction to Attention Modeling",
@@ -193,8 +179,6 @@ export const scheduleData = [
     week: 9, 
     date: "November 16",
     topic: "Introduction to Large Language Modeling (LLMs)", 
-    videoLink: "https://shorturl.at/JV3fN",
-    slidesLink: "https://docs.google.com/presentation/d/1nMyC1w6ItzDjDw3xXLJeRN0DOyZu1QiAh9lDMe-mn3A",
     description: "This week, we introduce large language models using the fundamentals that you have learned, from perplexity to transformer layers for pre-training. We'll focus on techniques from OpenAI, Anthropic, Amazon, and Google.",
     lecturingTopics: [
       "System Design for LLM Applications",
@@ -215,8 +199,6 @@ export const scheduleData = [
     week: 10, 
     date: "November 23",
     topic: "Practically Leveraging LLMs and Lifecycles", 
-    videoLink: "https://shorturl.at/oJBJb",
-    slidesLink: "https://docs.google.com/presentation/d/1Kh1rLlQ3rAK4BuRPPyWXG5d_Ba_39n-_",
     description: "Explore common approaches to optimally leverage LLMs for bespoke applications, attacking limitations like knowledge gaps, hallucinations, and logical reasoning problems. We'll also cover RLHF and the lifecycle of system design.",
     lecturingTopics: [
       "Retrieval Augmented Generation (RAG)",
@@ -235,7 +217,6 @@ export const scheduleData = [
     week: 11, 
     date: "November 30",
     topic: "Agentic Workflows", 
-    slidesLink: "https://docs.google.com/presentation/d/1SDDo4FYWQoascknu6g6lNSCHwZIxRuSwKW-KXNKuO-A/",
     description: "We discuss the most cutting edge approaches to leveraging LLMs in practice: agentic workflows. We will discuss how to build agents with LLMs and program-aided prompting to create intelligent agents that can perform complex tasks.",
     lecturingTopics: [
       "Intelligent Agents with Program-Aided LLMs",
@@ -258,8 +239,6 @@ export const scheduleData = [
     week: 12, 
     date: "December 7",
     topic: "Demonstrations and Poster Sessions", 
-    videoLink: "https://shorturl.at/bP15B",
-    slidesLink: "https://docs.google.com/presentation/d/1l3a-vyAofPcqCfzGqpAYVoHeyDN4T_g8",
     description: "Deploy and show off your domain-specific LLM and pitch your startup idea! Review the guidelines at the Final Project Website.",
     lecturingTopics: [
       "Final Project Presentations",
