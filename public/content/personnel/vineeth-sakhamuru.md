@@ -1,11 +1,5 @@
 # Vineeth Sakhamuru
 
-Vineeth Sakhamuru is a Teaching Assistant for CS 6120.
+Hi everyone, I'm Vineeth, one of your TAs for CS 6120. My major's Computer Science, and most of my work is in applied NLP. You can find more of my background on my [LinkedIn](https://www.linkedin.com/in/vineeth-sakhamuru/), but beyond the coursework, I watch a lot of movies and I'm a big sports fan, basketball and tennis especially. I'm always up for talking about the NBA or the Grand Slams.
 
-## Bio
-
-Vineeth is a graduate student at Northeastern University with a strong interest in Natural Language Processing and its applications in real-world scenarios.
-
-## Responsibilities
-
-As a member of the TA team, Vineeth helps coordinate labs and assignments and serves as a point of contact for administrative questions and technical support on the course materials.
+I'm looking forward to getting to know everyone this semester. You can message me on Teams anytime, or stop by my office hours on [Thursdays, 10:00am-12:00pm](https://teams.microsoft.com/meet/238733556830803?p=D3H7iRgJhGieNYD4aM).
