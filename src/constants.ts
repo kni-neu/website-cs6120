@@ -34,7 +34,7 @@ export const courseData = {
        name: "Vineeth Sakhamuru",
        slug: "vineeth-sakhamuru",
        role: "Teaching Assistant",
-       officeHours: "TBD",
+       officeHours: "Mon 10:00am-12:00pm, Teams",
        image: "/images/vineeth.jpeg",
        linkedin: "https://linkedin.com/",
        github: "https://github.com/"
