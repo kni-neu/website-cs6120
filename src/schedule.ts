@@ -48,8 +48,8 @@ export const scheduleData = [
       "Naïve Bayes Classifiers"
     ],
     application: "Sentiment Analysis",
-    readingGroup: "Agentic Learning without Data",
-    readingGroupLink: "https://arxiv.org/abs/2511.16043",
+    readingGroup: "Andrej Karpathy's Auto-Research (Git Repo)",
+    readingGroupLink: "https://github.com/karpathy/autoresearch",
     reading: "Jurafsky & Martin Ch. 4",
     readingLink: "https://web.stanford.edu/~jurafsky/slp3/4.pdf",
     lab: "Laboratory - Naïve Bayes",
@@ -67,8 +67,16 @@ export const scheduleData = [
       "Quiz 1 - Foundations"
     ],
     application: "Autocorrect in Practice",
-    readingGroup: "Agent to Application Protocols",
-    readingGroupLink: "https://arxiv.org/abs/2503.23278",
+    readingGroups: [
+      {
+        title: "Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions",
+        link: "https://arxiv.org/abs/2503.23278"
+      },
+      {
+        title: "Interoperability Protocols: MCP, ACP, A2A, and ANP",
+        link: "https://arxiv.org/abs/2505.02279"
+      }
+    ],
     lab: "Laboratory - Autocorrect Vocabulary Candidates",
     labLink: "https://colab.research.google.com/drive/1M8i7DuIuUMKDHO3Kuu98ZE3xv60zupAV",
     homework: "Assignment 3: Autocorrect",
@@ -91,8 +99,8 @@ export const scheduleData = [
       "Quiz 2 - Edit Distance"
     ],
     application: "Autocompleting words and sentences",
-    readingGroup: "Topic Modeling with Latent Dirichlet Allocation",
-    readingGroupLink: "https://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf",
+    readingGroup: "Agent Skills for Large Language Models",
+    readingGroupLink: "https://arxiv.org/abs/2602.12430",
     reading: "Jurafsky & Martin Ch. 3",
     readingLink: "https://web.stanford.edu/~jurafsky/slp3/3.pdf",
     labs: [
@@ -123,8 +131,8 @@ export const scheduleData = [
       "Intrinsic and Extrinsic Evaluation",
       "From Words to Sentences"
     ],
-    readingGroup: "Learning Text Similarity with Siamese RNNs",
-    readingGroupLink: "https://arxiv.org/abs/2310.12321",
+    readingGroup: "Learning Text Similarity with Siamese Recurrent Networks",
+    readingGroupLink: "https://aclanthology.org/W16-1617/",
     labs: [
       {
         title: "Laboratory - Word Embeddings with CBOW",
@@ -150,8 +158,16 @@ export const scheduleData = [
       "Memory Gating - GRUs and LSTMs"
     ],
     application: "PoS Tagging, NER, and Machine Translation",
-    readingGroup: "DeepSeek v3.2 Technical Report",
-    readingGroupLink: "https://arxiv.org/abs/2512.02556",
+    readingGroups: [
+      {
+        title: "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models",
+        link: "https://arxiv.org/abs/2512.02556"
+      },
+      {
+        title: "Distributed Representations of Words and Phrases and their Compositionality (Mikolov et al.)",
+        link: "https://arxiv.org/abs/1310.4546"
+      }
+    ],
     lab: "Laboratory - Serving an LLM (GCP/NEU)",
     labLink: "pdfs/lab-11.1.pdf",
     homework: "Assignment 6: RNN Implementation",
@@ -168,8 +184,16 @@ export const scheduleData = [
       "The Transformer Modeling Layer",
       "Large Scale Attention Modeling"
     ],
-    readingGroup: "On the Difficulty of Training RNNs",
-    readingGroupLink: "https://arxiv.org/abs/1211.5063",
+    readingGroups: [
+      {
+        title: "On the Difficulty of Training RNNs (Pascanu et al.)",
+        link: "https://arxiv.org/abs/1211.5063"
+      },
+      {
+        title: "Long Short-Term Memory (Hochreiter & Schmidhuber)",
+        link: "https://www.bioinf.jku.at/publications/older/2604.pdf"
+      }
+    ],
     lab: "Laboratory - Dot Product Attention & Masking",
     labLink: "https://colab.research.google.com/drive/10SDgUL4px6M_R7-4c1EDHEx0neck2ZOq",
     homework: "Assignment 7: Transformers",
@@ -186,10 +210,16 @@ export const scheduleData = [
       "Parameter-Efficient Tuning (PEFT)",
       "Scaling Laws and Emergent Abilities"
     ],
-    readingGroup: "Attention is All You Need",
-    readingGroupLink: "https://arxiv.org/abs/1706.03762",
-    reading: "BERT: Pre-training of Deep Bidirectional Transformers",
-    readingLink: "https://arxiv.org/abs/1810.04805",
+    readingGroups: [
+      {
+        title: "Attention is All You Need",
+        link: "https://arxiv.org/abs/1706.03762"
+      },
+      {
+        title: "BERT: Pre-training of Deep Bidirectional Transformers",
+        link: "https://arxiv.org/abs/1810.04805"
+      }
+    ],
     lab: "Laboratory - Tuning LLMs",
     labLink: "https://colab.research.google.com/drive/1u8DDFEiCC2yJgQIfbCOY4_aN06MJeUfv",
     homework: "Project Proposal",
@@ -206,10 +236,16 @@ export const scheduleData = [
       "Aligning LLMs via Instruction Following",
       "Reinforcement Learning with Human Feedback (RLHF)"
     ],
-    readingGroup: "Retrieval Augmented Generation",
-    readingGroupLink: "https://arxiv.org/abs/2005.11401",
-    reading: "Training to Instruct with Human Feedback",
-    readingLink: "https://arxiv.org/abs/2203.02155",
+    readingGroups: [
+      {
+        title: "Training Language Models to Follow Instructions with Human Feedback (OpenAI)",
+        link: "https://arxiv.org/abs/2203.02155"
+      },
+      {
+        title: "Retrieval Augmented Generation for Knowledge Intensive NLP Tasks (Lewis et al.)",
+        link: "https://arxiv.org/abs/2005.11401"
+      }
+    ],
     lab: "Laboratory - Instruction Following Tuning",
     labLink: "https://colab.research.google.com/drive/1ogy2_MEcMEFrJGiS7XwtEElwnV7bY_p5",
   },
@@ -223,6 +259,16 @@ export const scheduleData = [
       "NLP Systems Engineering Diagrams",
       "Creating and Evaluating Agentic Workflows",
       "Agent Communications and Standardization"
+    ],
+    readingGroups: [
+      {
+        title: "Chain of Thought Reasoning",
+        link: "https://arxiv.org/abs/2201.11903"
+      },
+      {
+        title: "Low Rank Adaptation of Large Language Models (LoRA)",
+        link: "https://arxiv.org/abs/2106.09685"
+      }
     ],
     labs: [
       {
@@ -245,8 +291,6 @@ export const scheduleData = [
       "Future Directions in NLP",
       "Poster Session"
     ],
-    readingGroup: "Low Rank Approximations for DNN Tuning",
-    readingGroupLink: "https://arxiv.org/abs/1706.03762",
     homework: "Final Report",
     homeworkLink: "/assignments/final-project",
   },

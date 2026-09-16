@@ -196,25 +196,32 @@ export default function SchedulePage() {
                   )}
 
                   {/* Reading Column */}
-                  {(week.readingGroup || week.reading) && (
+                  {(week.readingGroup || (week.readingGroups && week.readingGroups.length > 0) || week.reading) && (
                     <div className="space-y-6">
                       <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-[-8px]">Literature & Reference</span>
                       <div className="space-y-4 pt-4 border-t border-black/5">
-                        {week.readingGroup && (
-                          <div className="flex gap-3">
-                            <Users className="w-5 h-5 text-brand-red shrink-0 mt-1" />
-                            <div>
-                              <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-1">Reading Group</span>
-                              {week.readingGroupLink ? (
-                                <a href={week.readingGroupLink} target="_blank" rel="noreferrer" className="text-sm font-bold text-brand-red hover:underline decoration-2 underline-offset-4 decoration-current transition-all leading-tight block">
-                                  {week.readingGroup}
-                                </a>
-                              ) : (
-                                <p className="text-sm font-bold leading-tight">{week.readingGroup}</p>
-                              )}
+                        {/* Multiple Reading Group Papers Handling */}
+                        {(() => {
+                          const allPapers = [];
+                          if (week.readingGroup) allPapers.push({ title: week.readingGroup, link: week.readingGroupLink });
+                          if (week.readingGroups) allPapers.push(...week.readingGroups);
+
+                          return allPapers.map((paper, pIdx) => (
+                            <div key={pIdx} className="flex gap-3">
+                              <Users className="w-5 h-5 text-brand-red shrink-0 mt-1" />
+                              <div>
+                                <span className="text-[10px] uppercase font-black tracking-widest text-gray-400 block mb-1">Reading Group</span>
+                                {paper.link ? (
+                                  <a href={paper.link} target="_blank" rel="noreferrer" className="text-sm font-bold text-brand-red hover:underline decoration-2 underline-offset-4 decoration-current transition-all leading-tight block">
+                                    {paper.title}
+                                  </a>
+                                ) : (
+                                  <p className="text-sm font-bold leading-tight">{paper.title}</p>
+                                )}
+                              </div>
                             </div>
-                          </div>
-                        )}
+                          ));
+                        })()}
                         {week.reading && (
                           <div className="flex gap-3">
                             <BookOpen className="w-5 h-5 text-brand-red shrink-0 mt-1" />
