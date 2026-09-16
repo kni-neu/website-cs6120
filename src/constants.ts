@@ -33,6 +33,7 @@ export const courseData = {
     {
        name: "Vineeth Sakhamuru",
        slug: "vineeth-sakhamuru",
+       email: "sakhamuru.v@northeastern.edu",
        role: "Teaching Assistant",
        officeHours: "Mon 10:00am-12:00pm, Teams",
        officeHoursLink: "https://teams.microsoft.com/meet/232038331985800?p=SYV0TnKXDtxEUuvRgL",
