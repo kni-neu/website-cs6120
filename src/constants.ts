@@ -35,9 +35,10 @@ export const courseData = {
        slug: "vineeth-sakhamuru",
        role: "Teaching Assistant",
        officeHours: "Mon 10:00am-12:00pm, Teams",
+       officeHoursLink: "https://teams.microsoft.com/meet/232038331985800?p=SYV0TnKXDtxEUuvRgL",
        image: "/images/vineeth.jpeg",
-       linkedin: "https://linkedin.com/",
-       github: "https://github.com/"
+       linkedin: "https://www.linkedin.com/in/vineeth-sakhamuru/",
+       github: "https://github.com/vineeth-sakhamuru"
     },
     {
        name: "Zhengqi Hou",
