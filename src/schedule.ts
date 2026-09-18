@@ -3,7 +3,7 @@ export const scheduleData = [
     week: 1, 
     date: "September 14",
     topic: "Introduction and Applications", 
-    videoLink: "https://youtube.com",
+    videoLink: "https://northeastern-my.sharepoint.com/:v:/g/personal/k_ni_northeastern_edu/IQAspnp0UJGlQLYhDRti3ky_AZTCNohwQXwoTafyYqVrMUc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=tZdbe0",
     slidesLink: "https://docs.google.com/presentation/d/1i-LzFauPDsS27Tz3lkS4xU_EihfJ7ifU5rN5umSEJb4",
     description: "Language is the most efficient and compact way to transfer knowledge is through words, where the window to AGI is through NLP. This lecture is an introduction that takes us through history of how we got to LLMs. We'll also review some applications of NLP, current industry standards, and some of the most impactful approaches and where they are being implemented. Finally, we'll preview what we'll be learning, the logistics of how we'll be doing so, and the expectations for your participation in this class.",
     lecturingTopics: [
@@ -23,6 +23,8 @@ export const scheduleData = [
     week: 2, 
     date: "September 21",
     topic: "ML Foundations and Software Engineering", 
+    videoLink: "https://youtube.com",
+    slidesLink: "https://docs.google.com/presentation/d/1kUf6y4QVHlbOjudBw7Rzu9eSQsD9fZa4ASNCwAagNss",
     description: "As NLP is a specific branch of machine learning, we will review some foundational knowledge that we'll utilize through the course of this class. We'll look at both machine learning and software engineering best practices that will help you build and scale NLP systems later in the course. Because most NLP algorithms today rely heavily on computing resources, we'll dive into distributed compution approaches and cloud-based operations.",
     lecturingTopics: [
       "Foundations of Machine Learning",
