@@ -68,6 +68,11 @@ export default function SchedulePage() {
                             (slides)
                           </a>
                         )}
+                        {week.recitationLink && (
+                          <a href={week.recitationLink.startsWith('http') ? week.recitationLink : resolveAssetPath(week.recitationLink)} target="_blank" rel="noreferrer" className="text-brand-red ml-2 hover:underline transition-all">
+                            (recitation)
+                          </a>
+                        )}
                       </span>
                     )}
                   </div>
