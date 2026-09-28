@@ -25,6 +25,7 @@ export const scheduleData = [
     topic: "ML Foundations and Software Engineering", 
     videoLink: "https://youtube.com",
     slidesLink: "https://docs.google.com/presentation/d/1kUf6y4QVHlbOjudBw7Rzu9eSQsD9fZa4ASNCwAagNss",
+    recitationLink: "pdfs/tas/vineeth-la-recitation.pdf",
     description: "As NLP is a specific branch of machine learning, we will review some foundational knowledge that we'll utilize through the course of this class. We'll look at both machine learning and software engineering best practices that will help you build and scale NLP systems later in the course. Because most NLP algorithms today rely heavily on computing resources, we'll dive into distributed compution approaches and cloud-based operations.",
     lecturingTopics: [
       "Foundations of Machine Learning",
