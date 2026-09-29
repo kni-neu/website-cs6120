@@ -43,6 +43,8 @@ export const scheduleData = [
     week: 3, 
     date: "September 28",
     topic: "Language Classification", 
+    videoLink: "https://northeastern-my.sharepoint.com/:v:/g/personal/k_ni_northeastern_edu/IQAwTLbqbe9TRJRDT3QtmjsDAcRT41ednuxfzlbtrwmnIZw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=AMg6Lo",
+    slidesLink: "https://docs.google.com/presentation/d/1ir1jpYYVWjfc-xu_ZrhUAJJ29Z_R8tyGaacM1Wnijq8",
     description: "Building upon our review of machine learning, we discuss strategies in feature extraction and generation. Particularly as creating a vocabulary can explode required memory space, our featurization includes NLP-specific techniques (e.g., tokenization, lemmatization, etc.). This week also marks the first week of required reading of seminal papers that have revolutionized not only language processing but also machine learning and artificial intelligence writ large.",
     lecturingTopics: [
       "Building Vocabulary with Stopwords and Stemming",
