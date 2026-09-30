@@ -23,7 +23,7 @@ export const scheduleData = [
     week: 2, 
     date: "September 21",
     topic: "ML Foundations and Software Engineering", 
-    videoLink: "https://youtube.com",
+    videoLink: "https://northeastern-my.sharepoint.com/:v:/g/personal/k_ni_northeastern_edu/IQBd5p1FTV4rQrSyUiv_frBcAT4w6-RTxONQlGt8rs7-Xzg?e=A4C3XV",
     slidesLink: "https://docs.google.com/presentation/d/1kUf6y4QVHlbOjudBw7Rzu9eSQsD9fZa4ASNCwAagNss",
     recitationLink: "pdfs/tas/vineeth-la-recitation.pdf",
     description: "As NLP is a specific branch of machine learning, we will review some foundational knowledge that we'll utilize through the course of this class. We'll look at both machine learning and software engineering best practices that will help you build and scale NLP systems later in the course. Because most NLP algorithms today rely heavily on computing resources, we'll dive into distributed compution approaches and cloud-based operations.",
