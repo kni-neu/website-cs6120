@@ -64,6 +64,7 @@ export const scheduleData = [
     week: 4, 
     date: "October 5",
     topic: "Text Processing Algorithms", 
+    slidesLink: "https://docs.google.com/presentation/d/1OqnTDJrOS35qFaqzRadq7yf-OxYxzI5x8JLh1PyZ9yE",
     description: "One of the most widely used algorithms in practice today are autocorrecting algorithms that typically have on-device requirements. In this lecture, we'll review elements of dynamic programming, particularly with respect to the minimum edit distance algorithm, and how we can apply these concepts to the autocorrect and subsequently the autocomplete problem.",
     lecturingTopics: [
       "Representations of Language",
