@@ -16,7 +16,7 @@ Grading is based on a mix of individual and group efforts across projects and pa
 | --- | --- |
 | Participation & Attendance | 10% |
 | Labs | 10% |
-| Reading Groups & Quizzes | 15% |
+| Reading Groups | 15% |
 | Final Project | 15% |
 | Assignments | 20% |
 | Final Exam | 30% |

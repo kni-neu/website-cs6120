@@ -70,7 +70,6 @@ export const scheduleData = [
       "Representations of Language",
       "Comparisons / Differences in Language",
       "Minimum Edit Distance Algorithms",
-      "Quiz 1 - Foundations"
     ],
     application: "Autocorrect in Practice",
     readingGroups: [
@@ -101,8 +100,7 @@ export const scheduleData = [
     lecturingTopics: [
       "N-Gram Models, Smoothing, and evaluation",
       "Abstractive vs extractive approaches",
-      "Out of Vocabulary (OOV) Handling",
-      "Quiz 2 - Edit Distance"
+      "Out of Vocabulary (OOV) Handling"
     ],
     application: "Autocompleting words and sentences",
     readingGroup: "Agent Skills for Large Language Models",
