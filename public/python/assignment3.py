@@ -144,12 +144,76 @@ def min_edit_distance_test():
 
     print("min_edit_distance: \033[1;32mtests OK.\033[0m")
 
+#@title Q4: Tokenization
+
+def bpe_learn_merges(corpus, num_merges=5):
+    """
+    Learn byte pair encoding merges from a space-separated corpus.
+
+    Returns the merge pairs in learning order and a dictionary of final token
+    frequencies. Each word is tokenized independently and ends with </w>.
+    """
+    words = [list(word) + ["</w>"] for word in corpus.split()]
+    merges = []
+
+    for _ in range(max(0, num_merges)):
+        pair_counts = Counter()
+        for symbols in words:
+            pair_counts.update(zip(symbols, symbols[1:]))
+
+        if not pair_counts:
+            break
+
+        highest_count = max(pair_counts.values())
+        best_pair = min(
+            pair for pair, count in pair_counts.items()
+            if count == highest_count
+        )
+        merges.append(best_pair)
+        merged_symbol = "".join(best_pair)
+        merged_words = []
+
+        for symbols in words:
+            merged = []
+            index = 0
+            while index < len(symbols):
+                if (index + 1 < len(symbols)
+                        and (symbols[index], symbols[index + 1]) == best_pair):
+                    merged.append(merged_symbol)
+                    index += 2
+                else:
+                    merged.append(symbols[index])
+                    index += 1
+            merged_words.append(merged)
+        words = merged_words
+
+    vocabulary = Counter(token for symbols in words for token in symbols)
+    return merges, dict(vocabulary)
+
+
+def bpe_learn_merges_test():
+    merges, vocabulary = bpe_learn_merges("ab ac", num_merges=1)
+    assert merges == [("a", "b")], "ties should be resolved lexicographically"
+    assert vocabulary == {"ab": 1, "</w>": 2, "a": 1, "c": 1}
+
+    merges, vocabulary = bpe_learn_merges("low low lower", num_merges=2)
+    assert merges == [("l", "o"), ("lo", "w")]
+    assert vocabulary == {"low": 3, "</w>": 3, "e": 1, "r": 1}
+
+    assert bpe_learn_merges("a a", num_merges=0) == (
+        [], {"a": 2, "</w>": 2}
+    )
+    assert bpe_learn_merges("", num_merges=5) == ([], {})
+
+    print("bpe_learn_merges: \033[1;32mtests OK.\033[0m")
+
 if __name__ == '__main__':
 
     print("Running unit tests ... ")
     process_data_test()
     probable_substitutes_test()
     min_edit_distance_test()
+    bpe_learn_merges_test()
 
     print("Processing data, assuming that shakespeare-7k.txt is in working directory...")
     probs = process_data('./shakespeare-7k.txt')
