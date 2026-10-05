@@ -156,36 +156,7 @@ def bpe_learn_merges(corpus, num_merges=5):
     words = [list(word) + ["</w>"] for word in corpus.split()]
     merges = []
 
-    for _ in range(max(0, num_merges)):
-        pair_counts = Counter()
-        for symbols in words:
-            pair_counts.update(zip(symbols, symbols[1:]))
-
-        if not pair_counts:
-            break
-
-        highest_count = max(pair_counts.values())
-        best_pair = min(
-            pair for pair, count in pair_counts.items()
-            if count == highest_count
-        )
-        merges.append(best_pair)
-        merged_symbol = "".join(best_pair)
-        merged_words = []
-
-        for symbols in words:
-            merged = []
-            index = 0
-            while index < len(symbols):
-                if (index + 1 < len(symbols)
-                        and (symbols[index], symbols[index + 1]) == best_pair):
-                    merged.append(merged_symbol)
-                    index += 2
-                else:
-                    merged.append(symbols[index])
-                    index += 1
-            merged_words.append(merged)
-        words = merged_words
+    # <YOUR-CODE-HERE>
 
     vocabulary = Counter(token for symbols in words for token in symbols)
     return merges, dict(vocabulary)
