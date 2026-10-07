@@ -1,3 +1,7 @@
+### September 24
+**Room Change**
+We've now upgraded our room from San Jose 916 to San Jose 912/913. This should accomodate anyone on the waiting list, and will be cooler due to the classroom size.
+
 ### August 10, 2026
 **Welcome to CS 6120!** 
 Looking forward to a great semester exploring the depths of NLP. Make sure to check the reading list for Week 1.
