@@ -97,7 +97,7 @@ export const scheduleData = [
     week: 5, 
     date: "October 19",
     topic: "Introduction to Language Modeling", 
-    videoLink: "http://www.youtube.com",
+    videoLink: "https://tinyurl.com/38sjxea7",
     slidesLink: "https://docs.google.com/presentation/d/1WNInh81pclGLdtQJrZHQWIOPj6QO9Vo8b7NfcoQBi6s",
     description: "Today we'll begin our journey to understanding LLMs by observing its origins. Dropping the 'Large' from the now-ubiquitous term 'Large Language Models', we take a look at the foundational principles that extract the relationships defining what it means to model language and how we might generate text.",
     lecturingTopics: [
@@ -131,6 +131,8 @@ export const scheduleData = [
     week: 6, 
     date: "October 26",
     topic: "Word Modeling with Self-Supervision", 
+    videoLink: "http://www.youtube.com",
+    slidesLink: "https://docs.google.com/presentation/d/1VBswMU5Van3pSyxOJX68jgxJfXC4xJ7nhvvz-f0yFpQ",
     description: "Perhaps the most influential paper to have come out of the natural language community is the word2vec paper. This week's lecture reviews word models (including word2vec as well as continuous bags of words) and the embeddings / representations that they create.",
     lecturingTopics: [
       "Embeddings with Continuous Bag of Words (CBOW)",
