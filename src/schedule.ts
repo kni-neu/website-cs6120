@@ -64,6 +64,7 @@ export const scheduleData = [
     week: 4, 
     date: "October 5",
     topic: "Text Processing Algorithms", 
+    videoLink: "https://northeastern-my.sharepoint.com/:v:/g/personal/k_ni_northeastern_edu/IQCTM1EFJem5RoBxZFyyEv8SAa25eoHjzTC4xrf-IwEEVzM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=tQvMxx",
     slidesLink: "https://docs.google.com/presentation/d/1OqnTDJrOS35qFaqzRadq7yf-OxYxzI5x8JLh1PyZ9yE",
     description: "One of the most widely used algorithms in practice today are autocorrecting algorithms that typically have on-device requirements. In this lecture, we'll review elements of dynamic programming, particularly with respect to the minimum edit distance algorithm, and how we can apply these concepts to the autocorrect and subsequently the autocomplete problem.",
     lecturingTopics: [
@@ -96,6 +97,8 @@ export const scheduleData = [
     week: 5, 
     date: "October 19",
     topic: "Introduction to Language Modeling", 
+    videoLink: "http://www.youtube.com",
+    slidesLink: "https://docs.google.com/presentation/d/1WNInh81pclGLdtQJrZHQWIOPj6QO9Vo8b7NfcoQBi6s",
     description: "Today we'll begin our journey to understanding LLMs by observing its origins. Dropping the 'Large' from the now-ubiquitous term 'Large Language Models', we take a look at the foundational principles that extract the relationships defining what it means to model language and how we might generate text.",
     lecturingTopics: [
       "N-Gram Models, Smoothing, and evaluation",
