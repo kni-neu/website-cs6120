@@ -110,7 +110,7 @@ export const scheduleData = [
     labs: [
       {
         title: "Data Processing for N-Grams",
-        link: "https://colab.research.google.com/drive/1Ul6HAglGBoc53yAIfui-pgeTso7wMB26"
+        link: "https://colab.research.google.com/drive/1AVRooWlPXLxNrREvGt_DQvfRZS6Q2_8b"
       },
       {
         title: "N-Grams and OOV Words",
