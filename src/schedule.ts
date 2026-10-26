@@ -149,7 +149,7 @@ export const scheduleData = [
       },
       {
         title: "Laboratory - Mikolov's Word2Vec (Optional)",
-        link: "pdfs/lab-7.pdf"
+        link: "pdfs/lab-6.pdf"
       }
     ],
     homework: "Assignment 5: Word Embeddings",
