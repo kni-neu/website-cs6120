@@ -145,7 +145,7 @@ export const scheduleData = [
     labs: [
       {
         title: "Laboratory - Word Embeddings with CBOW",
-        link: "https://colab.research.google.com/drive/1lknBFuNeVr7-AvQx4vKvCQfVkL_za65Z"
+        link: "https://colab.research.google.com/drive/1gVv-5zFenoJM9My6A3vvqYzte2gSXAT3"
       },
       {
         title: "Laboratory - Mikolov's Word2Vec (Optional)",
@@ -177,8 +177,16 @@ export const scheduleData = [
         link: "https://arxiv.org/abs/1310.4546"
       }
     ],
-    lab: "Laboratory - Serving an LLM (GCP/NEU)",
-    labLink: "pdfs/lab-11.1.pdf",
+    labs: [
+      {
+        title: "Laboratory - Serving an LLM (GCP/Cloud)",
+        link: "pdfs/lab-7.1-gcp.pdf"
+      },
+      {
+        title: "Laboratory - Serving an LLM (NEU/HPC)",
+        link: "pdfs/lab-7.2-hpc.pdf"
+      }
+    ],
     homework: "Assignment 6: RNN Implementation",
     homeworkLink: "/assignments/hw6",
   },
