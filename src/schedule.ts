@@ -131,7 +131,7 @@ export const scheduleData = [
     week: 6, 
     date: "October 26",
     topic: "Word Modeling with Self-Supervision", 
-    videoLink: "http://www.youtube.com",
+    videoLink: "https://shorturl.at/ZlCFd",
     slidesLink: "https://docs.google.com/presentation/d/1VBswMU5Van3pSyxOJX68jgxJfXC4xJ7nhvvz-f0yFpQ",
     description: "Perhaps the most influential paper to have come out of the natural language community is the word2vec paper. This week's lecture reviews word models (including word2vec as well as continuous bags of words) and the embeddings / representations that they create.",
     lecturingTopics: [
@@ -159,6 +159,8 @@ export const scheduleData = [
     week: 7, 
     date: "November 2",
     topic: "Introduction to Sequential Modeling", 
+    videoLink: "http://www.youtube.com",
+    slidesLink: "https://docs.google.com/presentation/d/1O9XM6HCLdlCzU9MjfaVx48HlXnmY81M-_eXkIDC9N2Y",
     description: "Sequence relates to the order by which we see information. This week, we will learn about the modeling of sequences from Hidden Markov Models (HMMs) to Recurrent Neural Networks (RNNs) and memory gating mechanisms like LSTMs.",
     lecturingTopics: [
       "Hidden Markov Models (HMMs) & Viterbi Algorithm",
