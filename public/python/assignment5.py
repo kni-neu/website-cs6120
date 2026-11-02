@@ -158,7 +158,7 @@ def create_adjacency_test():
   word2index = {word[0]: i for i, word in enumerate(word_freqs)}
 
   # Run your code
-  adjacency_matrix = create_adjacency(filtered_dataset, word2index, win=5)
+  adjacency_matrix = create_adjacency(filtered_dataset, word2index, win=3)
 
   # Since we have the option to have counts or boolean, just check boolean
   adjacency_matrix = np.array((adjacency_matrix > 0).astype(int))
@@ -208,7 +208,7 @@ def train_svd(adjacency_matrix, min_sv_index = 3, max_sv_index = 103):
     Args:
         - adjacency_matrix: The adjacency matrix.
         - min_sv_index: The index of the largest singular value to use.
-        - max_sv_index: The index of the largest singular value to use
+        - max_sv_index: The index of the largest singular value to use (inclusive).
 
     Returns:
         - A NumPy array representing the embedding space (num_words x embedding_dim)
