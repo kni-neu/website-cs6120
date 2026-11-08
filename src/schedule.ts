@@ -217,8 +217,20 @@ export const scheduleData = [
         link: "https://www.bioinf.jku.at/publications/older/2604.pdf"
       }
     ],
-    lab: "Laboratory - Dot Product Attention & Masking",
-    labLink: "https://colab.research.google.com/drive/10SDgUL4px6M_R7-4c1EDHEx0neck2ZOq",
+    labs: [
+      {
+        title: "Dot Products and Attention Masking",
+        link: "https://colab.research.google.com/drive/1g8lHyNkHDoO_U-d8GBQMi_ElzQxiK9kr"
+      },
+      {
+        title: "Masking and Multi-Head Attention",
+        link: "https://colab.research.google.com/drive/1kglB1WwtoUvifGPiAmv09aBrsIsUab9e"
+      },
+      {
+        title: "Positional Encoding in Transformers",
+        link: "https://colab.research.google.com/drive/1m8vo9xpdVyZgaaC7BWZa2oge64Bvdu5Z"
+      }
+    ],
     homework: "Assignment 7: Transformers",
     homeworkLink: "/assignments/hw7",
     homeworkDue: "November 23",
