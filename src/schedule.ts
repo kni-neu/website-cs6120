@@ -160,7 +160,7 @@ export const scheduleData = [
     week: 7, 
     date: "November 2",
     topic: "Introduction to Sequential Modeling", 
-    videoLink: "http://www.youtube.com",
+    videoLink: "https://shorturl.at/BDte5",
     slidesLink: "https://docs.google.com/presentation/d/1O9XM6HCLdlCzU9MjfaVx48HlXnmY81M-_eXkIDC9N2Y",
     description: "Sequence relates to the order by which we see information. This week, we will learn about the modeling of sequences from Hidden Markov Models (HMMs) to Recurrent Neural Networks (RNNs) and memory gating mechanisms like LSTMs.",
     lecturingTopics: [
@@ -198,6 +198,8 @@ export const scheduleData = [
     week: 8, 
     date: "November 9",
     topic: "Attention and the Transformer Model", 
+    videoLink: "http://www.youtube.com",
+    slidesLink: "https://docs.google.com/presentation/d/17N-1L9D8sX0NHtgMlL-itjjgqqdgochR8KHVuLlBkZ8",
     description: "Attention models have been the leap forward that are the fundamental building blocks to modern machine learning today, including the essential ingredients for Large Language Models. We'll go deep into attention layers in neural networks, building our own from scratch.",
     lecturingTopics: [
       "Introduction to Attention Modeling",
