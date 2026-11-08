@@ -154,6 +154,7 @@ export const scheduleData = [
     ],
     homework: "Assignment 5: Word Embeddings",
     homeworkLink: "/assignments/hw5",
+    homeworkDue: "November 9",
   },
   { 
     week: 7, 
@@ -191,6 +192,7 @@ export const scheduleData = [
     ],
     homework: "Assignment 6: RNN Implementation",
     homeworkLink: "/assignments/hw6",
+    homeworkDue: "November 16",
   },
   { 
     week: 8, 
@@ -217,6 +219,7 @@ export const scheduleData = [
     labLink: "https://colab.research.google.com/drive/10SDgUL4px6M_R7-4c1EDHEx0neck2ZOq",
     homework: "Assignment 7: Transformers",
     homeworkLink: "/assignments/hw7",
+    homeworkDue: "November 23",
   },
   { 
     week: 9, 

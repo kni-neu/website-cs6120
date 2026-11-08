@@ -41,7 +41,7 @@ data.
 
 * Prepare your `*.py` and PDF file with the requested functions, artifacts, and ensure that 
 both are well-commented. Submission via 
-[Gradescope](https://www.gradescope.com/courses/1042888) is before 11:59pm, Monday, November 2.
+[Gradescope](https://www.gradescope.com/courses/1042888) is before 11:59pm, Monday, November 9.
 
 * For all three approaches, include in your writeup the nearest words for the following 
 strings: "neural", "dark", "recurrent", "learning", "monaural", "recognition", "disparity", 
