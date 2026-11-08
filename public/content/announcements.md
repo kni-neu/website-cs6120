@@ -1,3 +1,7 @@
+### November 3
+**Homework 5 Due Date**
+Due to its difficulty and by consensus, I've pushed assignment 5's due date back a week to November 9. All subsequent homeworks are now due a week later. The website is up to date with the right dates. If you have finished and turned assignment 5 into [Gradescope](http://www.gradescope.com), you will receive extra credit: 1 point for each day that turned it in early.
+
 ### October 20
 **Room Change x 2**
 Please attend NLP in San Jose 1010/1011. Assignments 1 and 2 have been updated and is released for you! There are no more recitations for the remainder of the semester. The labs have been updated and reflect what's in [Teams](https://teams.cloud.microsoft/l/message/19:QAEQJ0y2r-RSJ-mCEutlxp3U23D6bwbFACF-gQ-H7DI1@thread.tacv2/1792458432136?tenantId=a8eec281-aaa3-4dae-ac9b-9a398b9215e7&groupId=b6514d46-e292-441b-9bfb-7474213f4d84&parentMessageId=1792458432136&teamName=CS%206120%20(Fall%202026)%20-%20NLP&channelName=General&createdTime=1792458432136).
