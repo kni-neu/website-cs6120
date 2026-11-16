@@ -259,7 +259,7 @@ export const scheduleData = [
       }
     ],
     lab: "Laboratory - Tuning LLMs (Optional)",
-    labLink: "https://colab.research.google.com/drive/1Z4HJeSsP6-BCQkxUyKrjbnUPnnJuVruc",
+    labLink: "https://colab.research.google.com/drive/15AibeUrZ_p5vd6beYriVOl_-iqCBGuwv",
     homework: "Project Proposal",
     homeworkLink: "/assignments/project-proposal",
   },
