@@ -198,7 +198,7 @@ export const scheduleData = [
     week: 8, 
     date: "November 9",
     topic: "Attention and the Transformer Model", 
-    videoLink: "http://www.youtube.com",
+    videoLink: "https://shorturl.at/ve4By",
     slidesLink: "https://docs.google.com/presentation/d/17N-1L9D8sX0NHtgMlL-itjjgqqdgochR8KHVuLlBkZ8",
     description: "Attention models have been the leap forward that are the fundamental building blocks to modern machine learning today, including the essential ingredients for Large Language Models. We'll go deep into attention layers in neural networks, building our own from scratch.",
     lecturingTopics: [
@@ -239,6 +239,8 @@ export const scheduleData = [
     week: 9, 
     date: "November 16",
     topic: "Introduction to Large Language Modeling (LLMs)", 
+    videoLink: "http://www.youtube.com",
+    slidesLink: "https://docs.google.com/presentation/d/1DEjbhdSk8wxOVjWYKpWEJ79aGTtXpQJo386kEU8eYKM",
     description: "This week, we introduce large language models using the fundamentals that you have learned, from perplexity to transformer layers for pre-training. We'll focus on techniques from OpenAI, Anthropic, Amazon, and Google.",
     lecturingTopics: [
       "System Design for LLM Applications",
@@ -256,8 +258,8 @@ export const scheduleData = [
         link: "https://arxiv.org/abs/1810.04805"
       }
     ],
-    lab: "Laboratory - Tuning LLMs",
-    labLink: "https://colab.research.google.com/drive/1u8DDFEiCC2yJgQIfbCOY4_aN06MJeUfv",
+    lab: "Laboratory - Tuning LLMs (Optional)",
+    labLink: "https://colab.research.google.com/drive/1Z4HJeSsP6-BCQkxUyKrjbnUPnnJuVruc",
     homework: "Project Proposal",
     homeworkLink: "/assignments/project-proposal",
   },
@@ -282,8 +284,9 @@ export const scheduleData = [
         link: "https://arxiv.org/abs/2005.11401"
       }
     ],
-    lab: "Laboratory - Instruction Following Tuning",
-    labLink: "https://colab.research.google.com/drive/1ogy2_MEcMEFrJGiS7XwtEElwnV7bY_p5",
+    lab: "Laboratory - Instruction Following, RLHF (Optional)",
+    // labLink: "https://colab.research.google.com/drive/1ogy2_MEcMEFrJGiS7XwtEElwnV7bY_p5",
+    labLink: "https://colab.research.google.com/github/huggingface/cookbook/blob/main/notebooks/en/fine_tuning_llm_grpo_trl.ipynb",
   },
   { 
     week: 11, 
