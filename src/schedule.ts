@@ -267,6 +267,8 @@ export const scheduleData = [
     week: 10, 
     date: "November 23",
     topic: "Practically Leveraging LLMs and Lifecycles", 
+    videoLink: "http://www.youtube.com",
+    slidesLink: "https://docs.google.com/presentation/d/1EaAI6f5lu2YgMn7-waIb9235zRzYAC6x4izfy6ma2DE",
     description: "Explore common approaches to optimally leverage LLMs for bespoke applications, attacking limitations like knowledge gaps, hallucinations, and logical reasoning problems. We'll also cover RLHF and the lifecycle of system design.",
     lecturingTopics: [
       "Retrieval Augmented Generation (RAG)",
