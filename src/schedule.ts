@@ -258,7 +258,20 @@ export const scheduleData = [
         link: "https://arxiv.org/abs/1810.04805"
       }
     ],
-    lab: "Laboratory - Tuning LLMs (Optional)",
+    labs: [
+      {
+        title: "Chain of Thought Reasoning",
+        link: "https://colab.research.google.com/drive/19pzpGRj8-OSzHlyprvRCIETk-U0VHd_j"
+      },
+      {
+        title: "Agentic Tool Calling with LLMs",
+        link: "https://colab.research.google.com/drive/1QnnZV5haywoce9d8UMBdwflPMJJl2K4W"
+      },
+      {
+        title: "Reward Learning with GRPO (Detoxification)",
+        link: "https://colab.research.google.com/drive/15AibeUrZ_p5vd6beYriVOl_-iqCBGuwv"
+      }
+    ],
     labLink: "https://colab.research.google.com/drive/15AibeUrZ_p5vd6beYriVOl_-iqCBGuwv",
     homework: "Project Proposal",
     homeworkLink: "/assignments/project-proposal",
