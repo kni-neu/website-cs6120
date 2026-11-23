@@ -293,12 +293,12 @@ export const scheduleData = [
         link: "https://colab.research.google.com/drive/19pzpGRj8-OSzHlyprvRCIETk-U0VHd_j"
       },
       {
-        title: "Agentic Tool and the ReACT Framework",
-        link: "https://colab.research.google.com/drive/1ke2JtAR7gMH6UrRPL-ypO-nYEyKl8Eyi"
-      },
-      {
         title: "Reward Learning with GRPO (Detoxification)",
         link: "https://colab.research.google.com/drive/15AibeUrZ_p5vd6beYriVOl_-iqCBGuwv"
+      },
+      {
+        title: "Agentic Tool and the ReACT Framework",
+        link: "https://colab.research.google.com/drive/1ke2JtAR7gMH6UrRPL-ypO-nYEyKl8Eyi"
       }
     ],
   },
