@@ -258,20 +258,7 @@ export const scheduleData = [
         link: "https://arxiv.org/abs/1810.04805"
       }
     ],
-    labs: [
-      {
-        title: "Chain of Thought Reasoning",
-        link: "https://colab.research.google.com/drive/19pzpGRj8-OSzHlyprvRCIETk-U0VHd_j"
-      },
-      {
-        title: "Agentic Tool Calling with LLMs",
-        link: "https://colab.research.google.com/drive/1QnnZV5haywoce9d8UMBdwflPMJJl2K4W"
-      },
-      {
-        title: "Reward Learning with GRPO (Detoxification)",
-        link: "https://colab.research.google.com/drive/15AibeUrZ_p5vd6beYriVOl_-iqCBGuwv"
-      }
-    ],
+    lab: "Laboratory - SFT with LoRA and Reward Learning (Optional)",
     labLink: "https://colab.research.google.com/drive/15AibeUrZ_p5vd6beYriVOl_-iqCBGuwv",
     homework: "Project Proposal",
     homeworkLink: "/assignments/project-proposal",
@@ -297,9 +284,23 @@ export const scheduleData = [
         link: "https://arxiv.org/abs/2005.11401"
       }
     ],
-    lab: "Laboratory - Instruction Following, RLHF (Optional)",
+    // lab: "Laboratory - Instruction Following, RLHF (Optional)",
     // labLink: "https://colab.research.google.com/drive/1ogy2_MEcMEFrJGiS7XwtEElwnV7bY_p5",
-    labLink: "https://colab.research.google.com/github/huggingface/cookbook/blob/main/notebooks/en/fine_tuning_llm_grpo_trl.ipynb",
+    // labLink: "https://colab.research.google.com/github/huggingface/cookbook/blob/main/notebooks/en/fine_tuning_llm_grpo_trl.ipynb",
+    labs: [
+      {
+        title: "Chain of Thought Reasoning",
+        link: "https://colab.research.google.com/drive/19pzpGRj8-OSzHlyprvRCIETk-U0VHd_j"
+      },
+      {
+        title: "Agentic Tool and the ReACT Framework",
+        link: "https://colab.research.google.com/drive/1ke2JtAR7gMH6UrRPL-ypO-nYEyKl8Eyi"
+      },
+      {
+        title: "Reward Learning with GRPO (Detoxification)",
+        link: "https://colab.research.google.com/drive/15AibeUrZ_p5vd6beYriVOl_-iqCBGuwv"
+      }
+    ],
   },
   { 
     week: 11, 
