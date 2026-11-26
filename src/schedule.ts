@@ -289,20 +289,8 @@ export const scheduleData = [
     // lab: "Laboratory - Instruction Following, RLHF (Optional)",
     // labLink: "https://colab.research.google.com/drive/1ogy2_MEcMEFrJGiS7XwtEElwnV7bY_p5",
     // labLink: "https://colab.research.google.com/github/huggingface/cookbook/blob/main/notebooks/en/fine_tuning_llm_grpo_trl.ipynb",
-    labs: [
-      {
-        title: "Chain of Thought Reasoning",
-        link: "https://colab.research.google.com/drive/19pzpGRj8-OSzHlyprvRCIETk-U0VHd_j"
-      },
-      {
-        title: "Reward Learning with GRPO (Detoxification)",
-        link: "https://colab.research.google.com/drive/15AibeUrZ_p5vd6beYriVOl_-iqCBGuwv"
-      },
-      {
-        title: "Agentic Tool and the ReACT Framework",
-        link: "https://colab.research.google.com/drive/1ke2JtAR7gMH6UrRPL-ypO-nYEyKl8Eyi"
-      }
-    ],
+    lab: "Chain of Thought Reasoning",
+    labLink: "https://colab.research.google.com/drive/19pzpGRj8-OSzHlyprvRCIETk-U0VHd_j"
   },
   { 
     week: 11, 
@@ -327,12 +315,12 @@ export const scheduleData = [
     ],
     labs: [
       {
-        title: "Laboratory - Agentic Workflows",
-        link: "https://colab.research.google.com/drive/1EkHKTeXei1VrGus9AYugknkOKAg22ea1"
+        title: "Reward Learning with GRPO (Detoxification)",
+        link: "https://colab.research.google.com/drive/15AibeUrZ_p5vd6beYriVOl_-iqCBGuwv"
       },
       {
-        title: "Laboratory - OpenClaw Installation",
-        link: "pdfs/lab-week14.pdf"
+        title: "Agentic Tool and the ReACT Framework",
+        link: "https://colab.research.google.com/drive/1ke2JtAR7gMH6UrRPL-ypO-nYEyKl8Eyi"
       }
     ],
   },
