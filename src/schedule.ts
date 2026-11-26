@@ -327,12 +327,12 @@ export const scheduleData = [
   { 
     week: 12, 
     date: "December 7",
-    topic: "Demonstrations and Poster Sessions", 
+    topic: "Project Demonstrations Day", 
     description: "Deploy and show off your domain-specific LLM and pitch your startup idea! Review the guidelines at the Final Project Website.",
+    slidesLink: "https://docs.google.com/presentation/d/1iohRvA9nXzLkggpyO546V1x_0K4W1nuDhS0DKqcPK0s",
     lecturingTopics: [
-      "Final Project Presentations",
+      "Final Project Presentations (1 minute each)",
       "Future Directions in NLP",
-      "Poster Session"
     ],
     homework: "Final Report",
     homeworkLink: "/assignments/final-project",
